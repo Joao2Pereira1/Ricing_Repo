@@ -101,6 +101,3 @@ Ferramentas para otimizar o desempenho, monitorizar e gerir o sistema.
   - **APT / DNF / Pacman** (Linux)
 
 ---
-
-📎 **Fonte:**  
-Lista original do ChatGPT — [Ver conversa partilhada](https://chatgpt.com/share/68e9474e-d48c-8003-98a0-49c5ab937f79)
