@@ -1,0 +1,68 @@
+/* ============================================================ */
+/* 9. SYNTHWAVE '84                                             */
+/*    Neon futurista — magenta vibrante sobre roxo muito escuro */
+/* ============================================================ */
+:root {
+	--primary-color: #ff7edb;
+	--secondary-color: #495495;
+
+	--bg-default: #1a1333;
+	--bg-panel: #241b4d;
+	--bg-hover: rgba(255, 126, 219, 0.07);
+	--bg-selected: rgba(255, 126, 219, 0.12);
+	--bg-focus: rgba(255, 126, 219, 0.15);
+
+	--text-default: #f0eff1;
+	--text-muted: rgba(240, 239, 241, 0.5);
+	--text-highlight: #fe4450;
+
+	--border-color: rgba(240, 239, 241, 0.07);
+	--shadow-color: rgba(0, 0, 0, 0.65);
+
+	--gradient-primary: linear-gradient(90deg, #ff7edb 0%, #fe4450 100%);
+	--gradient-secondary: linear-gradient(180deg, #241b4d 0%, #130d2e 100%);
+	--gradient-hover: linear-gradient(180deg, rgba(255, 126, 219, 0.07) 0%, rgba(255, 126, 219, 0) 100%);
+
+	--scrollbar-bg: rgba(73, 84, 149, 0.6);
+	--scrollbar-thumb: rgba(255, 126, 219, 0.5);
+
+	--command-bg: #241b4d;
+	--command-gradient: linear-gradient(180deg, #241b4d 0%, #130d2e 100%);
+
+	--tooltip-bg: #110b28;
+	--tooltip-gradient: linear-gradient(160deg, #1a1333 0%, #0d0820 100%);
+	--tooltip-shadow: rgba(0, 0, 0, 0.75);
+	--tooltip-border: rgba(255, 126, 219, 0.2);
+
+	--editor-line-highlight: rgba(255, 126, 219, 0.07);
+	--editor-cursor: #ff7edb;
+
+	--sidebar-bg: #130d2e;
+	--sidebar-bg-alt: #0d0820;
+	--sidebar-border: rgba(240, 239, 241, 0.05);
+	--sidebar-selection: rgba(255, 126, 219, 0.1);
+	--sidebar-selection-border: rgba(254, 68, 80, 0.4);
+	--sidebar-text: #b2a8d0;
+	--sidebar-text-muted: rgba(178, 168, 208, 0.45);
+	--sidebar-text-active: #f0eff1;
+	--accent-color: #ff7edb;
+	--accent-soft: rgba(255, 126, 219, 0.07);
+	--sidebar-shadow: 4px 0 24px rgba(0, 0, 0, 0.55);
+
+	--file-selected-bg: rgba(255, 126, 219, 0.1);
+	--file-selected-border: rgba(254, 68, 80, 0.4);
+	--file-selected-glow: rgba(255, 126, 219, 0.13);
+
+	--indent-guide: rgba(255, 126, 219, 0.08);
+	--indent-guide-active: rgba(254, 68, 80, 0.35);
+
+	--focus-outline: rgba(255, 126, 219, 0.35);
+	--focus-glow: rgba(255, 126, 219, 0.1);
+	--input-border: rgba(255, 126, 219, 0.2);
+	--input-border-focus: rgba(254, 68, 80, 0.45);
+	--selection-highlight: rgba(255, 126, 219, 0.15);
+	--word-highlight: rgba(254, 68, 80, 0.12);
+	--word-highlight-border: rgba(254, 68, 80, 0.3);
+	--notification-border: rgba(255, 126, 219, 0.2);
+	--panel-border: rgba(255, 126, 219, 0.1);
+}

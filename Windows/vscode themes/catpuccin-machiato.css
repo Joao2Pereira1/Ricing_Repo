@@ -1,0 +1,68 @@
+/* ============================================================ */
+/* 6. CATPPUCCIN MACCHIATO                                      */
+/*    Pastel morno e sofisticado, contraste perfeito            */
+/* ============================================================ */
+:root {
+	--primary-color: #cba6f7;
+	--secondary-color: #45475a;
+
+	--bg-default: #1e1e2e;
+	--bg-panel: #272739;
+	--bg-hover: rgba(203, 166, 247, 0.07);
+	--bg-selected: rgba(203, 166, 247, 0.12);
+	--bg-focus: rgba(203, 166, 247, 0.15);
+
+	--text-default: #cdd6f4;
+	--text-muted: rgba(205, 214, 244, 0.5);
+	--text-highlight: #f5c2e7;
+
+	--border-color: rgba(205, 214, 244, 0.07);
+	--shadow-color: rgba(0, 0, 0, 0.55);
+
+	--gradient-primary: linear-gradient(90deg, #cba6f7 0%, #f5c2e7 100%);
+	--gradient-secondary: linear-gradient(180deg, #272739 0%, #181825 100%);
+	--gradient-hover: linear-gradient(180deg, rgba(203, 166, 247, 0.07) 0%, rgba(203, 166, 247, 0) 100%);
+
+	--scrollbar-bg: rgba(69, 71, 90, 0.6);
+	--scrollbar-thumb: rgba(203, 166, 247, 0.5);
+
+	--command-bg: #272739;
+	--command-gradient: linear-gradient(180deg, #272739 0%, #181825 100%);
+
+	--tooltip-bg: #141421;
+	--tooltip-gradient: linear-gradient(160deg, #1e1e2e 0%, #11111c 100%);
+	--tooltip-shadow: rgba(0, 0, 0, 0.65);
+	--tooltip-border: rgba(203, 166, 247, 0.2);
+
+	--editor-line-highlight: rgba(203, 166, 247, 0.07);
+	--editor-cursor: #cba6f7;
+
+	--sidebar-bg: #181825;
+	--sidebar-bg-alt: #11111c;
+	--sidebar-border: rgba(205, 214, 244, 0.05);
+	--sidebar-selection: rgba(203, 166, 247, 0.1);
+	--sidebar-selection-border: rgba(245, 194, 231, 0.4);
+	--sidebar-text: #bac2de;
+	--sidebar-text-muted: rgba(186, 194, 222, 0.45);
+	--sidebar-text-active: #cdd6f4;
+	--accent-color: #cba6f7;
+	--accent-soft: rgba(203, 166, 247, 0.07);
+	--sidebar-shadow: 4px 0 24px rgba(0, 0, 0, 0.45);
+
+	--file-selected-bg: rgba(203, 166, 247, 0.1);
+	--file-selected-border: rgba(245, 194, 231, 0.4);
+	--file-selected-glow: rgba(203, 166, 247, 0.13);
+
+	--indent-guide: rgba(203, 166, 247, 0.08);
+	--indent-guide-active: rgba(245, 194, 231, 0.35);
+
+	--focus-outline: rgba(203, 166, 247, 0.35);
+	--focus-glow: rgba(203, 166, 247, 0.1);
+	--input-border: rgba(203, 166, 247, 0.2);
+	--input-border-focus: rgba(245, 194, 231, 0.45);
+	--selection-highlight: rgba(203, 166, 247, 0.15);
+	--word-highlight: rgba(245, 194, 231, 0.12);
+	--word-highlight-border: rgba(245, 194, 231, 0.3);
+	--notification-border: rgba(203, 166, 247, 0.2);
+	--panel-border: rgba(203, 166, 247, 0.1);
+}

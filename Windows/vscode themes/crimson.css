@@ -1,0 +1,74 @@
+/* ============================================================ */
+/* VS CODE CUSTOM UI — PALETAS EXTRA                           */
+/* Crimson · Blood Moon · Ember                                */
+/* ============================================================ */
+
+
+/* ============================================================ */
+/* 11. CRIMSON                                                  */
+/*     Vermelho vivo, fundo preto puro — contraste máximo      */
+/* ============================================================ */
+:root {
+	--primary-color: #e8192c;
+	--secondary-color: #a00000;
+
+	--bg-default: #0a0a0a;
+	--bg-panel: #111111;
+	--bg-hover: rgba(232, 25, 44, 0.07);
+	--bg-selected: rgba(232, 25, 44, 0.12);
+	--bg-focus: rgba(232, 25, 44, 0.15);
+
+	--text-default: #ffffff;
+	--text-muted: rgba(255, 255, 255, 0.5);
+	--text-highlight: #ff2d3f;
+
+	--border-color: rgba(255, 255, 255, 0.06);
+	--shadow-color: rgba(0, 0, 0, 0.8);
+
+	--gradient-primary: linear-gradient(90deg, #e8192c 0%, #ff2d3f 100%);
+	--gradient-secondary: linear-gradient(180deg, #111111 0%, #070707 100%);
+	--gradient-hover: linear-gradient(180deg, rgba(232, 25, 44, 0.07) 0%, rgba(232, 25, 44, 0) 100%);
+
+	--scrollbar-bg: rgba(160, 0, 0, 0.4);
+	--scrollbar-thumb: rgba(232, 25, 44, 0.6);
+
+	--command-bg: #111111;
+	--command-gradient: linear-gradient(180deg, #111111 0%, #070707 100%);
+
+	--tooltip-bg: #0a0a0a;
+	--tooltip-gradient: linear-gradient(160deg, #141414 0%, #080808 100%);
+	--tooltip-shadow: rgba(0, 0, 0, 0.9);
+	--tooltip-border: rgba(232, 25, 44, 0.2);
+
+	--editor-line-highlight: rgba(232, 25, 44, 0.07);
+	--editor-cursor: #e8192c;
+
+	--sidebar-bg: #0a0a0a;
+	--sidebar-bg-alt: #070707;
+	--sidebar-border: rgba(255, 255, 255, 0.04);
+	--sidebar-selection: rgba(232, 25, 44, 0.1);
+	--sidebar-selection-border: rgba(255, 45, 63, 0.45);
+	--sidebar-text: #e0e0e0;
+	--sidebar-text-muted: rgba(170, 170, 170, 0.6);
+	--sidebar-text-active: #ffffff;
+	--accent-color: #e8192c;
+	--accent-soft: rgba(232, 25, 44, 0.07);
+	--sidebar-shadow: 4px 0 24px rgba(0, 0, 0, 0.7);
+
+	--file-selected-bg: rgba(232, 25, 44, 0.1);
+	--file-selected-border: rgba(255, 45, 63, 0.5);
+	--file-selected-glow: rgba(232, 25, 44, 0.14);
+
+	--indent-guide: rgba(232, 25, 44, 0.08);
+	--indent-guide-active: rgba(255, 45, 63, 0.35);
+
+	--focus-outline: rgba(232, 25, 44, 0.4);
+	--focus-glow: rgba(232, 25, 44, 0.12);
+	--input-border: rgba(232, 25, 44, 0.2);
+	--input-border-focus: rgba(255, 45, 63, 0.5);
+	--selection-highlight: rgba(232, 25, 44, 0.15);
+	--word-highlight: rgba(160, 0, 0, 0.15);
+	--word-highlight-border: rgba(232, 25, 44, 0.35);
+	--notification-border: rgba(232, 25, 44, 0.2);
+	--panel-border: rgba(232, 25, 44, 0.1);
+}

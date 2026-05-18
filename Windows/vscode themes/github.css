@@ -1,0 +1,68 @@
+/* ============================================================ */
+/* 8. GITHUB DARK DIMMED                                        */
+/*    Cinzento azulado neutro, clean e profissional            */
+/* ============================================================ */
+:root {
+	--primary-color: #539bf5;
+	--secondary-color: #444c56;
+
+	--bg-default: #22272e;
+	--bg-panel: #2d333b;
+	--bg-hover: rgba(83, 155, 245, 0.07);
+	--bg-selected: rgba(83, 155, 245, 0.12);
+	--bg-focus: rgba(83, 155, 245, 0.15);
+
+	--text-default: #adbac7;
+	--text-muted: rgba(173, 186, 199, 0.5);
+	--text-highlight: #6cb6ff;
+
+	--border-color: rgba(173, 186, 199, 0.07);
+	--shadow-color: rgba(0, 0, 0, 0.5);
+
+	--gradient-primary: linear-gradient(90deg, #539bf5 0%, #6cb6ff 100%);
+	--gradient-secondary: linear-gradient(180deg, #2d333b 0%, #1c2128 100%);
+	--gradient-hover: linear-gradient(180deg, rgba(83, 155, 245, 0.07) 0%, rgba(83, 155, 245, 0) 100%);
+
+	--scrollbar-bg: rgba(68, 76, 86, 0.6);
+	--scrollbar-thumb: rgba(83, 155, 245, 0.5);
+
+	--command-bg: #2d333b;
+	--command-gradient: linear-gradient(180deg, #2d333b 0%, #1c2128 100%);
+
+	--tooltip-bg: #1c2128;
+	--tooltip-gradient: linear-gradient(160deg, #22272e 0%, #141b22 100%);
+	--tooltip-shadow: rgba(0, 0, 0, 0.6);
+	--tooltip-border: rgba(83, 155, 245, 0.2);
+
+	--editor-line-highlight: rgba(83, 155, 245, 0.07);
+	--editor-cursor: #539bf5;
+
+	--sidebar-bg: #1c2128;
+	--sidebar-bg-alt: #141b22;
+	--sidebar-border: rgba(173, 186, 199, 0.05);
+	--sidebar-selection: rgba(83, 155, 245, 0.1);
+	--sidebar-selection-border: rgba(108, 182, 255, 0.4);
+	--sidebar-text: #909dab;
+	--sidebar-text-muted: rgba(144, 157, 171, 0.45);
+	--sidebar-text-active: #adbac7;
+	--accent-color: #539bf5;
+	--accent-soft: rgba(83, 155, 245, 0.07);
+	--sidebar-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+
+	--file-selected-bg: rgba(83, 155, 245, 0.1);
+	--file-selected-border: rgba(108, 182, 255, 0.4);
+	--file-selected-glow: rgba(83, 155, 245, 0.12);
+
+	--indent-guide: rgba(83, 155, 245, 0.08);
+	--indent-guide-active: rgba(108, 182, 255, 0.35);
+
+	--focus-outline: rgba(83, 155, 245, 0.35);
+	--focus-glow: rgba(83, 155, 245, 0.1);
+	--input-border: rgba(83, 155, 245, 0.2);
+	--input-border-focus: rgba(108, 182, 255, 0.45);
+	--selection-highlight: rgba(83, 155, 245, 0.15);
+	--word-highlight: rgba(108, 182, 255, 0.12);
+	--word-highlight-border: rgba(108, 182, 255, 0.3);
+	--notification-border: rgba(83, 155, 245, 0.2);
+	--panel-border: rgba(83, 155, 245, 0.1);
+}
