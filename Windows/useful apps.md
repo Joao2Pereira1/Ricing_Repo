@@ -1,7 +1,5 @@
 # 💻 Lista de Aplicações Organizadas por Categoria
 
-> Lista baseada na recomendação do ChatGPT — inclui ferramentas de **trabalho**, **multimédia**, **otimização** e **personalização visual** para o Windows e Linux.
-
 **Nota:** Caso desinstales o One Commander tens de o remover do registo, para que o explorador de ficheiros do windows fique como padrão:
 
 HKEY_CLASSES_ROOT\Folder\shell\open\command    e colocas explorer.exe "%1"  e desativar opção para o autostart do One Commnader
