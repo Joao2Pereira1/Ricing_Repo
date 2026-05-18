@@ -8,10 +8,6 @@ https://github.com/user-attachments/assets/3eecc39d-4ae8-4d9f-8622-4ab6356708c2
 
 # 💻 Lista de Aplicações (Windows)
 
-**Nota:** Caso desinstales o One Commander tens de o remover do registo, para que o explorador de ficheiros do windows fique como padrão:
-
-HKEY_CLASSES_ROOT\Folder\shell\open\command    e colocas explorer.exe "%1"  e desativar opção para o autostart do One Commnader
-
 ---
 
 ## 🎨 Media (Criação e Edição)
