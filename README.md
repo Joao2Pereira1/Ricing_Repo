@@ -6,63 +6,67 @@ https://github.com/user-attachments/assets/d53a3bfa-ee86-4cdf-bc8c-23a25c0a90a8
 
 https://github.com/user-attachments/assets/3eecc39d-4ae8-4d9f-8622-4ab6356708c2
 
-# 💻 Windows Applications
+# 💻 Windows & Linux Application Stack
+
+---
+
+# 🪟 Windows Applications
+
+---
 
 ## 🎨 Media & Content Creation
 
-Tools for image, audio, and video editing.
+Tools for image, audio, video, and 3D work.
 
-- **Krita** — professional digital painting and illustration
-- **Vegas** — advanced non-linear video editor
-- **Inkscape** — vector graphics editor (Illustrator alternative)
-- **SketchUp** — 3D modeling for architecture and design
+- **Krita** — digital painting and illustration
 - **Photoshop** — professional image editing
 - **Paint.NET** — lightweight image editor
-- **Audacity** — open-source audio recording and editing
-- **Discord** — voice, video, and text communication
+- **Inkscape** — vector graphics editor (Illustrator alternative)
+- **SketchUp** — 3D modeling for architecture and design
+- **Vegas** — advanced non-linear video editor
+- **Audacity** — audio recording and editing
+- **Discord** — communication platform (voice, video, text)
 
 ---
 
 ## 🧰 Development & Productivity
 
-Programming environments, databases, utilities, and productivity tools.
+Programming tools, databases, system utilities, and productivity apps.
 
-- **ProtonVPN** — secure and fast VPN
-- **Python** — versatile programming language
-- **Node.js** — JavaScript runtime for backend development
 - **Visual Studio Code** — cross-platform code editor
-- **Warp** — modern intelligent terminal
-- **MinGW** — GCC compiler toolchain for Windows
-- **PyQt Designer** — graphical UI designer for Python apps
+- **Warp** — modern terminal
+- **Python** — programming language
+- **Node.js** — JavaScript runtime
+- **MinGW** — GCC toolchain for Windows
+- **PyQt Designer** — GUI designer for Python apps
+- **ProtonVPN** — secure VPN service
 
 ### 🗄️ Databases
 
-- **MySQL** — relational database management system
-- **MongoDB** — NoSQL document-oriented database
+- **MySQL** — relational database
+- **MongoDB** — NoSQL database
 - **SQLite** — lightweight local database
 
-### 🛠️ Utilities
+### 🛠️ Utilities & Engineering
 
-- **One Commander** — powerful and modern file explorer
-- **LocalSend** — local file sharing between devices
-- **Recuva** — deleted file recovery
-- **DevToys** — developer toolbox (converters, encoders, etc.)
-- **GNS3** — network topology simulator
-- **Quartus** — FPGA/VHDL development suite
-- **United Sets** — utility/app launcher (works well with Komorebic stacked mode)
-- **TeraCopy** — faster large-file copying
+- **One Commander** — advanced file explorer
+- **LocalSend** — local file sharing
+- **Recuva** — file recovery
+- **DevToys** — developer utility toolkit
+- **GNS3** — network simulation
+- **Quartus** — FPGA/VHDL development
+- **United Sets** — app grouping utility
+- **TeraCopy** — fast file transfer tool
 - **Ghidra** — reverse engineering suite
-- **x64dbg** — debugging and reverse engineering tool
+- **x64dbg** — debugger
 
 ---
 
-## 🪞 Aesthetics & Customization
+## 🪞 Aesthetics & UI Customization
 
-Applications for desktop appearance and UI enhancement.
-
-- **TranslucentTB** — translucent taskbar
-- **DropTop Four** — customizable desktop top bar
-- **Windhawk** — advanced Windows UI customization
+- **TranslucentTB** — transparent taskbar
+- **DropTop Four** — desktop top bar customization
+- **Windhawk** — Windows UI modifications
 - **Rainmeter** — desktop widgets and skins
 - **f.lux** — adaptive screen color temperature
 
@@ -70,132 +74,128 @@ Applications for desktop appearance and UI enhancement.
 
 ## ⚙️ Optimization & System Maintenance
 
-Performance tuning, diagnostics, and system management tools.
-
-- **NanaZip** — modern 7-Zip alternative
-- **PowerToys** — official Microsoft advanced utilities
-- **Holdem** — system optimization utility
+- **NanaZip** — modern archive tool (7-Zip alternative)
+- **PowerToys** — Windows utility suite
 - **LatencyMon** — latency diagnostics
-- **Razer Cortex** — gaming performance manager
-- **Cheat Engine** — memory analysis and debugging
-- **Flameshot** — advanced screenshot tool
-- **DefenderUI** — enhanced Windows Defender interface
-- **BleachBit** — system cleanup utility
-- **WinToys** — Windows tweaks and optimization
-- **WinHance** — optimization and package installer
-- **PC Manager** — Microsoft optimization suite
-- **RAMMap** — detailed memory usage analyzer
-- **TCP Optimizer** — TCP/network parameter tuning
-- **DNS Benchmark** — DNS server benchmarking
-- **Context Menu Manager** — context menu management
-- **Shell Context Menu** — right-click menu customization
-- **Shutdown Timer Classic** — scheduled shutdown utility
+- **Razer Cortex** — gaming optimization
+- **Cheat Engine** — memory analysis/debugging tool
+- **Flameshot** — screenshot tool
+- **DefenderUI** — Windows Defender UI enhancement
+- **BleachBit** — system cleanup
+- **WinToys** — system tweaks
+- **WinHance** — optimization + installer tool
+- **PC Manager** — Microsoft system optimization
+- **RAMMap** — memory analysis
+- **TCP Optimizer** — network tuning
+- **DNS Benchmark** — DNS testing
+- **Context Menu Manager** — right-click menu editor
+- **Shell Context Menu** — context menu customization
+- **Shutdown Timer Classic** — scheduled shutdown tool
+- **Kudu** — system optimization / advanced tooling utility
 
-### 🧹 Windows Tweaks & Privacy
+### 🧹 Tweaks & Privacy
 
-- **Chris Titus Tool** — Windows optimization/tweaking script
-    
-    ```
-    irm christitus.com/win | iex
-    ```
-    
-- **O&O ShutUp10++** — disable telemetry and unnecessary background features
-- **Crap Cleaner / Fixer** — temporary file cleanup and maintenance
+- **Chris Titus Tool**
+- irm christitus.com/win | iex
+- **O&O ShutUp10++** — telemetry and privacy control
+- **Crap Cleaner / Fixer** — system cleanup
 
 ---
 
-# 🧩 Linux Applications
+# 🐧 Linux Applications
+
+---
 
 ## 📂 System & Productivity
 
-- **Dolphin** — advanced file manager with split view and plugins
-- **Konsole** — main terminal emulator
-- **KRename** — powerful batch file renamer
-- **KRunner** — Spotlight-like launcher
-- **KDE System Monitor** — modern system monitoring
-- **KCharSelect** — special symbols and emoji picker
-- **KSystemLog** — system log viewer
+- **Dolphin** — file manager
+- **Konsole** — terminal emulator
+- **KRename** — batch renamer
+- **KRunner** — fast launcher
+- **KDE System Monitor** — system monitoring
+- **KCharSelect** — symbols and emoji tool
+- **KSystemLog** — log viewer
 
 ---
 
 ## 💻 Development & Engineering
 
 - **GNS3** — network simulation
-- **Sublime Text** — lightweight fast editor
-- **Kate** — great lightweight note-taking editor
-- **Meld** — file and directory comparison tool
+- **Sublime Text** — lightweight editor
+- **Kate** — editor / notes
+- **Meld** — file comparison tool
 
 ---
 
 ## 📄 Documents & Utilities
 
 - **Okular** — PDF viewer with annotations
-- **Calligra Suite** — office/document suite
+- **Calligra Suite** — office suite
 - **Ark** — archive manager
-- **KCalc** — scientific calculator
+- **KCalc** — calculator
 
 ---
 
 ## 💾 Disk & System Management
 
-- **KDE Partition Manager** — partition management
+- **KDE Partition Manager** — partition tool
 - **KDE ISO Image Writer** — bootable USB creator
-- **Timeshift** — system snapshots (essential for rolling-release distros)
-- **Filelight** — visual disk usage analyzer
-- **BleachBit** — system cleanup
+- **Timeshift** — system snapshots
+- **Filelight** — disk usage visualization
+- **BleachBit** — cleanup tool
 
 ---
 
 ## 🖼️ Media & Creative Tools
 
-- **Gwenview** — lightweight image viewer
-- **Spectacle** — screenshots and annotations
+- **Gwenview** — image viewer
+- **Spectacle** — screenshots
 - **Kdenlive** — video editor
-- **LosslessCut** — lossless video trimming
-- **GIMP** — lightweight image editing
-- **Krita** — digital painting and illustration
+- **LosslessCut** — video trimming
+- **GIMP** — image editing
+- **Krita** — digital art
 - **Elisa** — music player
-- **Haruna** — mpv-based media player
-
-> For quick video trimming/editing, online tools can sometimes be faster.
+- **Haruna** — media player (MPV-based)
 
 ---
 
-## 🌐 Internet & General Applications
+## 🌐 Internet & General Apps
 
-- **Vivaldi** — highly customizable browser
+- **Vivaldi** — browser
 
 ---
 
-## 🧠 Notes & Markdown
+## 🧠 Notes & Knowledge
 
-- **MarkText** — lightweight Markdown editor
-- **Obsidian** — powerful Markdown knowledge base
+- **MarkText** — Markdown editor
+- **Obsidian** — knowledge base / notes
 
 ---
 
 ## 🔗 Connectivity
 
-- **KDE Connect** — desktop/mobile integration
+- **KDE Connect** — phone integration
 
 ---
 
-# 🧠 Hidden Gems (Linux Power User)
+# 🧠 Hidden Gems (Power User Toolkit)
+
+---
 
 ## 🔍 Search & Navigation
 
-- **FSearch** — ultra-fast file search (similar to Everything)
-- **fd** — modern alternative to `find`
-- **ripgrep** — modern alternative to `grep`
+- **FSearch** — ultra-fast file search
+- **fd** — modern `find`
+- **ripgrep** — modern `grep`
 
 ---
 
-## 🧰 Terminal & CLI Utilities
+## 🧰 Terminal & CLI Tools
 
-- **btop** — modern terminal system monitor
+- **btop** — system monitor
 - **zoxide** — smart directory navigation
-- **bat** — `cat` with syntax highlighting
-- **eza** — modern replacement for `ls`
+- **bat** — `cat` with highlighting
+- **eza** — modern `ls`
 
 ---
 
@@ -203,61 +203,53 @@ Performance tuning, diagnostics, and system management tools.
 
 - **paru** — AUR helper
 - **stow** — dotfile management
-- **reflector** — Pacman mirror optimization
+- **reflector** — mirror optimization
 
 ---
 
 ## 🔐 Security & Privacy
 
-- **KeePassXC** — local password manager
-- **VeraCrypt** — disk/file encryption
-- **OpenSnitch** — outbound network monitoring firewall
+- **KeePassXC** — password manager
+- **VeraCrypt** — encryption
+- **OpenSnitch** — network firewall control
 
 ---
 
-## 🌐 Networking & Engineering
+## 🌐 Networking
 
 - **Wireshark** — packet analysis
-- **nmap** — network scanner
+- **nmap** — network scanning
 - **iperf** — throughput testing
-- **netcat** — socket/network debugging utility
+- **netcat** — networking/debugging tool
 
 ---
 
-## 🖼️ Useful Lightweight Tools
+## 🖼️ Lightweight Utilities
 
-- **Flameshot** — annotated screenshots
-- **Peek** — GIF screen recorder
-- **ImageMagick** — CLI image manipulation toolkit
+- **Flameshot** — screenshots with annotation
+- **Peek** — GIF recording
+- **ImageMagick** — CLI image processing
 
 ---
 
 ## 📊 Monitoring & Debugging
 
-- **Glances** — advanced system dashboard
-- **iotop** — disk I/O monitor
-- **strace** — syscall tracing/debugging
+- **Glances** — system dashboard
+- **iotop** — disk usage monitor
+- **strace** — syscall tracing
 
 ---
 
-## 🎯 Hardcore Productivity
+## 🎯 Productivity Tools
 
-- **Taskwarrior** — terminal-based task manager
-- **fzf** — fuzzy finder/search tool
-
----
-
-## 🧰 Underrated Utilities
-
-- **CopyQ** — clipboard history manager
-- **LocalSend** — open-source local file sharing
-- **Converseen** — batch image converter
-- **Syncthing** — decentralized file synchronization
+- **Taskwarrior** — terminal task manager
+- **fzf** — fuzzy finder
 
 ---
 
-## 🎨 Engineering & Creative Software
+## 🧰 Underrated Tools
 
-- **FreeCAD** — open-source CAD
-- **QGIS** — GIS and mapping platform
-- **Blender** — professional 3D suite
+- **CopyQ** — clipboard manager
+- **LocalSend** — local file sharing
+- **Converseen** — batch image processing
+- **Syncthing** — file synchronization
