@@ -1,0 +1,25 @@
+{
+    "Alt-i": "PreviousSplit",
+    "Alt-o": "NextSplit",
+
+    "Ctrl-Shift-z": "Redo",
+
+    // useful commands
+    "Alt-w": "command: wc",
+    "Ctrl-p": "command: pwd",
+    "Alt-f": "command: tree",
+    "Ctrl-j": "command: joinLines", 
+    "Alt-e": "command: fzf",
+
+    "Alt-a": "StartOfLine",
+    "Alt-d": "EndOfLine",
+
+    // recarregar config
+    "Alt-r": "command: reload",
+    
+    // u can do this: "Tab": "Autocomplete|IndentSelection|InsertTab"
+    // tries autocomplete if doesn't work goes to indent,etc
+    
+    // u can chain commands
+    "Alt-s": "Save,Quit"
+}

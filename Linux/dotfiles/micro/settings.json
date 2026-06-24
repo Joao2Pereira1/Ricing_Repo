@@ -1,0 +1,14 @@
+{
+    "colorscheme": "wal",
+    "autosave": 30,
+    "tabsize": 4,
+    "tabstospaces": true,
+    "scrollmargin": 5,
+    "ruler": true,
+    "statusline": true,
+    "cursorline": true,
+    "savecursor": true,
+    "saveundo": true,
+    "softwrap": false,
+    "shell": "/usr/bin/fish"
+}

@@ -5,9 +5,9 @@
 
 # ── Paths dos scripts ─────────────────────────────────────────────────────────
 # Ajusta estes paths para onde tens os scripts guardados
-set SCRIPT_VSCODE   "$HOME/vscode-theme-switch.sh"
-set SCRIPT_KONSOLE  "$HOME/konsole-theme.sh"
-set SCRIPT_OMP      "$HOME/oh-my-posh-theme.sh"
+set SCRIPT_VSCODE   "$HOME/scripts/vscode-theme-switch.sh"
+set SCRIPT_KONSOLE  "$HOME/scripts/konsole-theme.sh"
+set SCRIPT_OMP      "$HOME/scripts/oh-my-posh-theme.sh"
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 function _err

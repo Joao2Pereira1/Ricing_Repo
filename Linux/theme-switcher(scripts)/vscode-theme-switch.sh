@@ -21,122 +21,123 @@ SETTINGS_FILE="${HOME}/.config/Code/User/settings.json"
 # O nome tem de ser EXATAMENTE igual ao que aparece no settings.json
 # ex: "workbench.colorTheme": "Dracula Theme"  →  "Dracula Theme"
 
-VSCODE_THEMES: dict[str, str] = {
-    # ── Principais ────────────────────────────────────────────────────────────
-    "Dracula Theme"            : "Dracula Theme",
-    "Dracula Theme Soft"       : "Dracula Theme Soft",
-    "Monokai"                  : "Monokai",
-    "Monokai Pro"              : "Monokai Pro",
-    "One Dark Pro"             : "One Dark Pro",
-    "One Dark Pro Darker"      : "One Dark Pro Darker",
-    "GitHub Dark"              : "GitHub Dark",
-    "Tokyo Night"              : "Tokyo Night",
-    "Tokyo Night Storm"        : "Tokyo Night Storm",
-    "Catppuccin Mocha"         : "Catppuccin Mocha",
-    "Catppuccin Macchiato"     : "Catppuccin Macchiato",
-    "Catppuccin Frappé"        : "Catppuccin Frappé",
-    "Catppuccin Latte"         : "Catppuccin Latte",
-    "Sea Green Theme"          : "Sea Green Theme",
-    "Minimal Kiwi"             : "Minimal Kiwi",
-    "Nord"                     : "Nord",
-    "Gruvbox Dark Hard"        : "Gruvbox Dark Hard",
-    "Gruvbox Dark Medium"      : "Gruvbox Dark Medium",
-    "Gruvbox Dark Soft"        : "Gruvbox Dark Soft",
-    "Gruvbox Light Hard"       : "Gruvbox Light Hard",
-    "Gruvbox Light Medium"     : "Gruvbox Light Medium",
-    "Gruvbox Light Soft"       : "Gruvbox Light Soft",
-    "Ayu Dark"                 : "Ayu Dark",
-    "Ayu Light"                : "Ayu Light",
-    "Ayu Mirage"               : "Ayu Mirage",
-    "Material Theme Ocean"     : "Material Theme Ocean",
-    "Synthwave '84"            : "Synthwave '84",
-    "Atom One Dark"            : "Atom One Dark",
+VSCODE_THEMES=(
+    # ── Os teus temas ──────────────────────────────────────────────────────────
+    "Dracula Theme"
+    "Dracula Theme Soft"
+    "Monokai"
+    "Monokai Pro"
+    "One Dark Pro"
+    "One Dark Pro Darker"
+    "GitHub Dark"
+    "Tokyo Night"
+    "Tokyo Night Storm"
+    "Catppuccin Mocha"
+    "Catppuccin Macchiato"
+    "Catppuccin Frappé"
+    "Catppuccin Latte"
+    "Dark Green Jungle theme"
+    "Sea Green Theme"
+    "Minimal Kiwi"
+    "Nord"
+    "Gruvbox Dark Hard"
+    "Gruvbox Dark Medium"
+    "Gruvbox Dark Soft"
+    "Gruvbox Light Hard"
+    "Gruvbox Light Medium"
+    "Gruvbox Light Soft"
+    "Ayu Dark"
+    "Ayu Light"
+    "Ayu Mirage"
+    "Material Theme Ocean"
+    "Synthwave '84"
+    "Atom One Dark"
 
-    # ── Rainglow (dark) ───────────────────────────────────────────────────────
-    "Absent (rainglow)"        : "Absent (rainglow)",
-    "Allure (rainglow)"        : "Allure (rainglow)",
-    "Arstotzka (rainglow)"     : "Arstotzka (rainglow)",
-    "Azure (rainglow)"         : "Azure (rainglow)",
-    "Banner (rainglow)"        : "Banner (rainglow)",
-    "Blink (rainglow)"         : "Blink (rainglow)",
-    "Bold (rainglow)"          : "Bold (rainglow)",
-    "Box UK (rainglow)"        : "Box UK (rainglow)",
-    "Brave (rainglow)"         : "Brave (rainglow)",
-    "Carbonight (rainglow)"    : "Carbonight (rainglow)",
-    "Chocolate (rainglow)"     : "Chocolate (rainglow)",
-    "Codecourse (rainglow)"    : "Codecourse (rainglow)",
-    "Coffee (rainglow)"        : "Coffee (rainglow)",
-    "Comrade (rainglow)"       : "Comrade (rainglow)",
-    "Crackpot (rainglow)"      : "Crackpot (rainglow)",
-    "Crisp (rainglow)"         : "Crisp (rainglow)",
-    "Dare (rainglow)"          : "Dare (rainglow)",
-    "Darkside (rainglow)"      : "Darkside (rainglow)",
-    "Downpour (rainglow)"      : "Downpour (rainglow)",
-    "Earthsong (rainglow)"     : "Earthsong (rainglow)",
-    "Fodder (rainglow)"        : "Fodder (rainglow)",
-    "Frantic (rainglow)"       : "Frantic (rainglow)",
-    "Freshcut (rainglow)"      : "Freshcut (rainglow)",
-    "Friction (rainglow)"      : "Friction (rainglow)",
-    "Frontier (rainglow)"      : "Frontier (rainglow)",
-    "Github (rainglow)"        : "Github (rainglow)",
-    "Glance (rainglow)"        : "Glance (rainglow)",
-    "Gloom (rainglow)"         : "Gloom (rainglow)",
-    "Glowfish (rainglow)"      : "Glowfish (rainglow)",
-    "Goldfish (rainglow)"      : "Goldfish (rainglow)",
-    "Grunge (rainglow)"        : "Grunge (rainglow)",
-    "Halflife (rainglow)"      : "Halflife (rainglow)",
-    "Hawaii (rainglow)"        : "Hawaii (rainglow)",
-    "Heroku (rainglow)"        : "Heroku (rainglow)",
-    "Hive (rainglow)"          : "Hive (rainglow)",
-    "Horizon (rainglow)"       : "Horizon (rainglow)",
-    "Hub (rainglow)"           : "Hub (rainglow)",
-    "Hyrule (rainglow)"        : "Hyrule (rainglow)",
-    "Iceberg (rainglow)"       : "Iceberg (rainglow)",
-    "Isotope (rainglow)"       : "Isotope (rainglow)",
-    "Jewel (rainglow)"         : "Jewel (rainglow)",
-    "Jingle (rainglow)"        : "Jingle (rainglow)",
-    "Joker (rainglow)"         : "Joker (rainglow)",
-    "Juicy (rainglow)"         : "Juicy (rainglow)",
-    "Jumper (rainglow)"        : "Jumper (rainglow)",
-    "Keen (rainglow)"          : "Keen (rainglow)",
-    "Kiwi (rainglow)"          : "Kiwi (rainglow)",
-    "Laracasts (rainglow)"     : "Laracasts (rainglow)",
-    "Laravel (rainglow)"       : "Laravel (rainglow)",
-    "Lavender (rainglow)"      : "Lavender (rainglow)",
-    "Legacy (rainglow)"        : "Legacy (rainglow)",
-    "Lichen (rainglow)"        : "Lichen (rainglow)",
-    "Loyal (rainglow)"         : "Loyal (rainglow)",
-    "Mauve (rainglow)"         : "Mauve (rainglow)",
-    "Mellow (rainglow)"        : "Mellow (rainglow)",
-    "Mintchoc (rainglow)"      : "Mintchoc (rainglow)",
-    "Monzo (rainglow)"         : "Monzo (rainglow)",
-    "Morass (rainglow)"        : "Morass (rainglow)",
+    # ── Rainglow (dark) ────────────────────────────────────────────────────────
+    "Absent (rainglow)"
+    "Allure (rainglow)"
+    "Arstotzka (rainglow)"
+    "Azure (rainglow)"
+    "Banner (rainglow)"
+    "Blink (rainglow)"
+    "Bold (rainglow)"
+    "Box UK (rainglow)"
+    "Brave (rainglow)"
+    "Carbonight (rainglow)"
+    "Chocolate (rainglow)"
+    "Codecourse (rainglow)"
+    "Coffee (rainglow)"
+    "Comrade (rainglow)"
+    "Crackpot (rainglow)"
+    "Crisp (rainglow)"
+    "Dare (rainglow)"
+    "Darkside (rainglow)"
+    "Downpour (rainglow)"
+    "Earthsong (rainglow)"
+    "Fodder (rainglow)"
+    "Frantic (rainglow)"
+    "Freshcut (rainglow)"
+    "Friction (rainglow)"
+    "Frontier (rainglow)"
+    "Github (rainglow)"
+    "Glance (rainglow)"
+    "Gloom (rainglow)"
+    "Glowfish (rainglow)"
+    "Goldfish (rainglow)"
+    "Grunge (rainglow)"
+    "Halflife (rainglow)"
+    "Hawaii (rainglow)"
+    "Heroku (rainglow)"
+    "Hive (rainglow)"
+    "Horizon (rainglow)"
+    "Hub (rainglow)"
+    "Hyrule (rainglow)"
+    "Iceberg (rainglow)"
+    "Isotope (rainglow)"
+    "Jewel (rainglow)"
+    "Jingle (rainglow)"
+    "Joker (rainglow)"
+    "Juicy (rainglow)"
+    "Jumper (rainglow)"
+    "Keen (rainglow)"
+    "Kiwi (rainglow)"
+    "Laracasts (rainglow)"
+    "Laravel (rainglow)"
+    "Lavender (rainglow)"
+    "Legacy (rainglow)"
+    "Lichen (rainglow)"
+    "Loyal (rainglow)"
+    "Mauve (rainglow)"
+    "Mellow (rainglow)"
+    "Mintchoc (rainglow)"
+    "Monzo (rainglow)"
+    "Morass (rainglow)"
 
-    # ── Rainglow Contrast ─────────────────────────────────────────────────────
-    "Absent Contrast (rainglow)"     : "Absent Contrast (rainglow)",
-    "Allure Contrast (rainglow)"     : "Allure Contrast (rainglow)",
-    "Azure Contrast (rainglow)"      : "Azure Contrast (rainglow)",
-    "Carbonight Contrast (rainglow)" : "Carbonight Contrast (rainglow)",
-    "Chocolate Contrast (rainglow)"  : "Chocolate Contrast (rainglow)",
-    "Gloom Contrast (rainglow)"      : "Gloom Contrast (rainglow)",
-    "Horizon Contrast (rainglow)"    : "Horizon Contrast (rainglow)",
-    "Iceberg Contrast (rainglow)"    : "Iceberg Contrast (rainglow)",
-    "Isotope Contrast (rainglow)"    : "Isotope Contrast (rainglow)",
-    "Laracasts Contrast (rainglow)"  : "Laracasts Contrast (rainglow)",
-    "Laravel Contrast (rainglow)"    : "Laravel Contrast (rainglow)",
-    "Lichen Contrast (rainglow)"     : "Lichen Contrast (rainglow)",
-    "Mauve Contrast (rainglow)"      : "Mauve Contrast (rainglow)",
+    # ── Rainglow Contrast ──────────────────────────────────────────────────────
+    "Absent Contrast (rainglow)"
+    "Allure Contrast (rainglow)"
+    "Azure Contrast (rainglow)"
+    "Carbonight Contrast (rainglow)"
+    "Chocolate Contrast (rainglow)"
+    "Gloom Contrast (rainglow)"
+    "Horizon Contrast (rainglow)"
+    "Iceberg Contrast (rainglow)"
+    "Isotope Contrast (rainglow)"
+    "Laracasts Contrast (rainglow)"
+    "Laravel Contrast (rainglow)"
+    "Lichen Contrast (rainglow)"
+    "Mauve Contrast (rainglow)"
 
-    # ── Rainglow Light ────────────────────────────────────────────────────────
-    "Absent Light (rainglow)"        : "Absent Light (rainglow)",
-    "Earthsong Light (rainglow)"     : "Earthsong Light (rainglow)",
-    "Freshcut Light (rainglow)"      : "Freshcut Light (rainglow)",
-    "Github Light (rainglow)"        : "Github Light (rainglow)",
-    "Gloom Light (rainglow)"         : "Gloom Light (rainglow)",
-    "Horizon Light (rainglow)"       : "Horizon Light (rainglow)",
-    "Laracasts Light (rainglow)"     : "Laracasts Light (rainglow)",
-    "Laravel Light (rainglow)"       : "Laravel Light (rainglow)",
-}
+    # ── Rainglow Light ─────────────────────────────────────────────────────────
+    "Absent Light (rainglow)"
+    "Earthsong Light (rainglow)"
+    "Freshcut Light (rainglow)"
+    "Github Light (rainglow)"
+    "Gloom Light (rainglow)"
+    "Horizon Light (rainglow)"
+    "Laracasts Light (rainglow)"
+    "Laravel Light (rainglow)"
+)
 
 # Cores para output no terminal
 RED='\033[0;31m'
@@ -260,19 +261,34 @@ EOF
 apply_vscode_theme() {
     local theme_name="$1"
 
-    # Backup
     cp "$SETTINGS_FILE" "${SETTINGS_FILE}.bak"
 
-    # Se jq disponível, usa-o para editar JSON corretamente
-    if command -v jq >/dev/null 2>&1; then
-        local tmp
-        tmp="$(mktemp)"
-        jq --arg theme "$theme_name" '."workbench.colorTheme" = $theme' "$SETTINGS_FILE" > "$tmp" \
-            && mv "$tmp" "$SETTINGS_FILE"
-    else
-        # Fallback: sed simples
-        sed -i "s|\"workbench.colorTheme\":.*|\"workbench.colorTheme\": \"${theme_name}\",|" "$SETTINGS_FILE"
-    fi
+    python3 - "$SETTINGS_FILE" "$theme_name" <<'PY'
+import re
+import sys
+
+path = sys.argv[1]
+theme = sys.argv[2]
+
+with open(path, "r", encoding="utf-8") as f:
+    content = f.read()
+
+pattern = r'(^[ \t]*"workbench\.colorTheme"[ \t]*:[ \t]*")[^"]*("[ \t]*,?[ \t]*$)'
+
+new_content, count = re.subn(
+    pattern,
+    rf'\1{theme}\2',
+    content,
+    count=1,
+    flags=re.MULTILINE
+)
+
+if count == 0:
+    raise SystemExit("ERRO: workbench.colorTheme não encontrado como chave principal")
+
+with open(path, "w", encoding="utf-8") as f:
+    f.write(new_content)
+PY
 }
 
 # ─── Menu de seleção do workbench theme (lista estática) ──────────────────────

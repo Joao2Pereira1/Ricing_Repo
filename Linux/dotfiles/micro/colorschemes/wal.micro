@@ -1,0 +1,45 @@
+# Auto-generated from pywal
+# Source: ~/.cache/wal/colors.json
+
+color-link default "#bde2f5,#160604"
+color-link comment "#9cb4c2,#160604"
+
+color-link identifier "#c8bfb2,#160604"
+color-link constant "#cfc1ff,#160604"
+color-link constant.string "#e7a398,#160604"
+color-link constant.string.char "#e7a398,#160604"
+
+color-link statement "#eb8071,#160604"
+color-link symbol "#bde2f5,#160604"
+color-link preproc "#c8b8fe,#160604"
+color-link type "#e1caba,#160604"
+color-link special "#e5d0c3,#160604"
+color-link underlined "#cfc1ff,#160604"
+
+color-link error "bold #f09184,#160604"
+color-link todo "bold #ccafa5,#160604"
+
+color-link hlsearch "#160604,#c4a497"
+color-link statusline "#160604,#bde2f5"
+color-link tabbar "#160604,#bde2f5"
+
+color-link indent-char "#9cb4c2,#160604"
+color-link line-number "#9cb4c2,#160604"
+color-link current-line-number "#ccafa5,#160604"
+
+color-link diff-added "#e7a398"
+color-link diff-modified "#ccafa5"
+color-link diff-deleted "#f09184"
+
+color-link gutter-error "#f09184,#160604"
+color-link gutter-warning "#ccafa5,#160604"
+
+color-link cursor-line "#160604"
+color-link color-column "#160604"
+
+color-link type.extended "default"
+color-link symbol.tag "#cfc1ff,#160604"
+color-link match-brace "#160604,#c8bfb2"
+
+color-link tab-error "#f09184"
+color-link trailingws "#f09184"

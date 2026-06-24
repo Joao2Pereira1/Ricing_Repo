@@ -1,0 +1,116 @@
+// Based on many examples
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"source": "~/.config/fastfetch/arch.txt",
+		"color": {
+			"1": "green",
+		},
+		//        "position": "top",
+		"padding": {
+			"top": 3, // Top padding
+			"left": 3, // Left padding
+			"right": 3, // Right padding
+		},
+	},
+	// to edit vertical bars and text spaces, use vscode or nano
+	// cause spaces in kate bugs because of wrap lines
+	"display": {
+		"separator": "",
+		// vertical bars e text margin
+		"constants": [
+			// CONSTANT {$1}
+			"\u001b[32m│                                 │\u001b[33D\u001b[39m",
+			//constant {$2}
+			"\u001b[32m                                 \u001b[51D\u001b[39m",
+		],
+	},
+	"modules": [
+		"break",
+		{
+			"type": "custom",
+			"key": " ",
+			"format": "{#32}╭  user ───────────────────────────────────────╮",
+		},
+		{
+			"type": "title",
+			"format": "                    {$2}{#39}{user-name}{#32}@{#39}{host-name}",
+		},
+		{
+			"key": "{#32}╰───────────────────────────────────────────────╯",
+			"type": "custom",
+		},
+		{
+			"type": "custom",
+			"key": "{#32}╭────────────╮",
+			"format": "{#32}╭─────────────────────────────────╮",
+		},
+		{
+			"key": "{#32}│ {#32}󰇅 machine  {#32}│",
+			"type": "host",
+			"format": "{$1}{name}  {#32}{version}",
+		},
+		{
+			"key": "{#32}│ {#32}{icon} distro   {#32}│",
+			"type": "os",
+			"format": "{$1}{pretty-name} {codename} {#32}{version} [{arch}]",
+		},
+		{
+			"key": "{#32}│ {#32}{icon} kernel   {#32}│",
+			"type": "kernel",
+			"format": "{$1}{sysname}  {#32}[v{release}]",
+		},
+		{
+			"key": "{#32}│ {#32}󰇄 desktop  {#32}│",
+			"type": "de",
+			"format": "{$1}{pretty-name}  {#32}[v{version}]",
+		},
+		{
+			"key": "{#32}│ {#32} terminal {#32}│",
+			"type": "terminal",
+			"format": "{$1}{pretty-name}  {#32}[{version}]",
+		},
+		{
+			"key": "{#32}│ {#32} shell    {#32}│",
+			"type": "shell",
+			"format": "{$1}{pretty-name}  {#32}[v{version}]",
+		},
+		{
+			"key": "{#32}│ {#32}{icon} cpu      {#32}│",
+			"type": "cpu",
+			"showPeCoreCount": true,
+			"temp": true,
+			"format": "{$1}{name} {#32}[{freq-max}]",
+		},
+		{
+			"type": "gpu",
+			"key": "{#32}│ {#32}{icon} gpu      {#32}│",
+			"detectionMethod": "auto",
+			"driverSpecific": false,
+			"format": "{$1}{name:18}",
+		},
+		{
+			"key": "{#32}│ {#32}{icon} memory   {#32}│",
+			"type": "memory",
+			"format": "{$1}{used} / {total} {#32}({percentage}{#32})",
+		},
+		{
+			"type": "custom",
+			"key": "{#32}╰────────────╯",
+			"format": "{#32}╰─────────────────────────────────╯",
+		},
+		{
+			"type": "custom",
+			"key": " ",
+			"format": "{#32}╭ 󱥚 colors ─────────────────────────────────────╮",
+		},
+		{
+			"type": "custom",
+			"format": "{$2}{#37}                    󰮯  {#97}󰊠 {#36}󰊠 {#96}󰊠 {#35}󰊠 {#95}󰊠 {#34}󰊠 {#94}󰊠 {#33}󰊠 {#93}󰊠 {#32}󰊠 {#92}󰊠 {#31}󰊠 {#91}󰊠 {#30}󰊠 {#90}󰊠    ",
+		},
+		{
+			"key": "{#32}╰───────────────────────────────────────────────╯",
+			"type": "custom",
+		},
+	],
+}
