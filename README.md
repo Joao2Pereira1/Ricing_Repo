@@ -6,6 +6,13 @@ https://github.com/user-attachments/assets/d53a3bfa-ee86-4cdf-bc8c-23a25c0a90a8
 
 https://github.com/user-attachments/assets/3eecc39d-4ae8-4d9f-8622-4ab6356708c2
 
+https://github.com/user-attachments/assets/d006fa44-2be6-4755-87f2-27000c463995
+
+https://github.com/user-attachments/assets/4153bc56-f976-4ecb-a222-a8402e944990
+
+https://github.com/user-attachments/assets/bdd83b94-f6ae-4895-8280-df49e2cabe33
+
+
 # 💻 Windows & Linux Application Stack
 
 ---
