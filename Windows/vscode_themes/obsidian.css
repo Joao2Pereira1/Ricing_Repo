@@ -1,0 +1,56 @@
+/* ============================================================ */
+/* OBSIDIAN                                                     */
+/*     Grafite profundo e dourado âmbar — elegante e sério     */
+/* ============================================================ */
+:root {
+	--primary-color: #b8952a;
+	--secondary-color: #d4b04a;
+	--bg-default: #0e0e10;
+	--bg-panel: #161618;
+	--bg-hover: rgba(184, 149, 42, 0.07);
+	--bg-selected: rgba(184, 149, 42, 0.12);
+	--bg-focus: rgba(212, 176, 74, 0.12);
+	--text-default: #e8e0cc;
+	--text-muted: rgba(232, 224, 204, 0.5);
+	--text-highlight: #d4b04a;
+	--border-color: rgba(232, 224, 204, 0.06);
+	--shadow-color: rgba(0, 0, 0, 0.85);
+	--gradient-primary: linear-gradient(90deg, #b8952a 0%, #d4b04a 100%);
+	--gradient-secondary: linear-gradient(180deg, #161618 0%, #0a0a0c 100%);
+	--gradient-hover: linear-gradient(180deg, rgba(184, 149, 42, 0.07) 0%, rgba(184, 149, 42, 0) 100%);
+	--scrollbar-bg: rgba(22, 22, 24, 0.8);
+	--scrollbar-thumb: rgba(184, 149, 42, 0.5);
+	--command-bg: #161618;
+	--command-gradient: linear-gradient(180deg, #161618 0%, #0a0a0c 100%);
+	--tooltip-bg: #0a0a0c;
+	--tooltip-gradient: linear-gradient(160deg, #141416 0%, #080809 100%);
+	--tooltip-shadow: rgba(0, 0, 0, 0.9);
+	--tooltip-border: rgba(184, 149, 42, 0.25);
+	--editor-line-highlight: rgba(184, 149, 42, 0.07);
+	--editor-cursor: #d4b04a;
+	--sidebar-bg: #0e0e10;
+	--sidebar-bg-alt: #0a0a0c;
+	--sidebar-border: rgba(232, 224, 204, 0.05);
+	--sidebar-selection: rgba(184, 149, 42, 0.12);
+	--sidebar-selection-border: rgba(212, 176, 74, 0.38);
+	--sidebar-text: #c4aa6a;
+	--sidebar-text-muted: rgba(184, 149, 42, 0.6);
+	--sidebar-text-active: #e8e0cc;
+	--accent-color: #d4b04a;
+	--accent-soft: rgba(184, 149, 42, 0.08);
+	--sidebar-shadow: 4px 0 24px rgba(0, 0, 0, 0.7);
+	--file-selected-bg: rgba(184, 149, 42, 0.11);
+	--file-selected-border: rgba(212, 176, 74, 0.42);
+	--file-selected-glow: rgba(184, 149, 42, 0.14);
+	--indent-guide: rgba(184, 149, 42, 0.09);
+	--indent-guide-active: rgba(212, 176, 74, 0.32);
+	--focus-outline: rgba(212, 176, 74, 0.32);
+	--focus-glow: rgba(184, 149, 42, 0.1);
+	--input-border: rgba(184, 149, 42, 0.2);
+	--input-border-focus: rgba(212, 176, 74, 0.42);
+	--selection-highlight: rgba(212, 176, 74, 0.12);
+	--word-highlight: rgba(184, 149, 42, 0.11);
+	--word-highlight-border: rgba(212, 176, 74, 0.28);
+	--notification-border: rgba(184, 149, 42, 0.2);
+	--panel-border: rgba(184, 149, 42, 0.09);
+}

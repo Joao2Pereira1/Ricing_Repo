@@ -1,0 +1,56 @@
+/* ============================================================ */
+/* ARCTIC                                                       */
+/*     Azul gelo e ciano frio — fundo branco-azulado polar     */
+/* ============================================================ */
+:root {
+	--primary-color: #4a9ebb;
+	--secondary-color: #7dcfe0;
+	--bg-default: #0b1520;
+	--bg-panel: #111e2d;
+	--bg-hover: rgba(74, 158, 187, 0.08);
+	--bg-selected: rgba(74, 158, 187, 0.13);
+	--bg-focus: rgba(125, 207, 224, 0.13);
+	--text-default: #cde8f0;
+	--text-muted: rgba(205, 232, 240, 0.5);
+	--text-highlight: #7dcfe0;
+	--border-color: rgba(205, 232, 240, 0.07);
+	--shadow-color: rgba(0, 0, 0, 0.7);
+	--gradient-primary: linear-gradient(90deg, #4a9ebb 0%, #7dcfe0 100%);
+	--gradient-secondary: linear-gradient(180deg, #111e2d 0%, #080f18 100%);
+	--gradient-hover: linear-gradient(180deg, rgba(74, 158, 187, 0.08) 0%, rgba(74, 158, 187, 0) 100%);
+	--scrollbar-bg: rgba(11, 21, 32, 0.7);
+	--scrollbar-thumb: rgba(74, 158, 187, 0.5);
+	--command-bg: #111e2d;
+	--command-gradient: linear-gradient(180deg, #111e2d 0%, #080f18 100%);
+	--tooltip-bg: #080f18;
+	--tooltip-gradient: linear-gradient(160deg, #0e1a26 0%, #060c14 100%);
+	--tooltip-shadow: rgba(0, 0, 0, 0.85);
+	--tooltip-border: rgba(74, 158, 187, 0.25);
+	--editor-line-highlight: rgba(74, 158, 187, 0.08);
+	--editor-cursor: #7dcfe0;
+	--sidebar-bg: #0b1520;
+	--sidebar-bg-alt: #080f18;
+	--sidebar-border: rgba(205, 232, 240, 0.05);
+	--sidebar-selection: rgba(74, 158, 187, 0.13);
+	--sidebar-selection-border: rgba(125, 207, 224, 0.4);
+	--sidebar-text: #85c8db;
+	--sidebar-text-muted: rgba(74, 158, 187, 0.6);
+	--sidebar-text-active: #cde8f0;
+	--accent-color: #7dcfe0;
+	--accent-soft: rgba(74, 158, 187, 0.09);
+	--sidebar-shadow: 4px 0 24px rgba(0, 0, 0, 0.6);
+	--file-selected-bg: rgba(74, 158, 187, 0.12);
+	--file-selected-border: rgba(125, 207, 224, 0.45);
+	--file-selected-glow: rgba(74, 158, 187, 0.15);
+	--indent-guide: rgba(74, 158, 187, 0.1);
+	--indent-guide-active: rgba(125, 207, 224, 0.35);
+	--focus-outline: rgba(125, 207, 224, 0.35);
+	--focus-glow: rgba(74, 158, 187, 0.12);
+	--input-border: rgba(74, 158, 187, 0.22);
+	--input-border-focus: rgba(125, 207, 224, 0.45);
+	--selection-highlight: rgba(125, 207, 224, 0.13);
+	--word-highlight: rgba(74, 158, 187, 0.12);
+	--word-highlight-border: rgba(125, 207, 224, 0.3);
+	--notification-border: rgba(74, 158, 187, 0.22);
+	--panel-border: rgba(74, 158, 187, 0.1);
+}

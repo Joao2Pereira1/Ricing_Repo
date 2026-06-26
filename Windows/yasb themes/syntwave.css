@@ -86,6 +86,22 @@
 }
 
 /* ================= */
+/* === BASE STYLES === */
+/* ================= */
+* {
+	font-size: 12px;
+	color: var(--subtext0);
+	font-weight: 700;
+	font-family: "JetBrainsMono NFP";
+	margin: 0;
+	padding: 0;
+	transition:
+		background-color var(--anim),
+		color var(--anim),
+		transform var(--anim-fast);
+}
+
+/* ================= */
 /* === BAR LAYOUT === */
 /* ================= */
 .yasb-bar {
@@ -95,8 +111,8 @@
 	border: 1px solid rgba(255, 255, 255, 0.05);
 
 	box-shadow:
-	0 6px 24px rgba(0, 0, 0, 0.45),
-	inset 0 1px rgba(255, 255, 255, 0.04);
+		0 6px 24px rgba(0, 0, 0, 0.45),
+		inset 0 1px rgba(255, 255, 255, 0.04);
 
 	padding: 2px 6px;
 }
@@ -112,7 +128,6 @@
 .widget:hover {
 	background-color: var(--accent-soft);
 	transform: translateY(-1px);
-	box-shadow: 0 0 8px var(--accent-glow);
 }
 
 
@@ -841,8 +856,8 @@
 	padding: 0 4px;
 	border-radius: 8px;
 	transition:
-	background-color 200ms ease,
-	transform 150ms ease;
+		background-color 200ms ease,
+		transform 150ms ease;
 }
 
 .battery-widget:hover,
@@ -855,8 +870,8 @@
 .battery-widget .icon {
 	/* tema padrão */
 	transition:
-	color 150ms ease,
-	text-shadow 150ms ease;
+		color 150ms ease,
+		text-shadow 150ms ease;
 }
 
 /* Mudança de cor dependendo do status */
@@ -1232,4 +1247,38 @@
 
 .quick-launch-popup .preview.edit .preview-btn.save:hover {
 	background: rgb(19, 90, 204);
+}
+
+/* ================= */
+/* === POWER PLAN WIDGET === */
+/* ================= */
+
+.power-plan-widget {
+	padding: 0 6px 0 6px;
+}
+
+.power-plan-menu {
+	background-color: var(--bar-color);
+}
+
+/* Menu Style */
+.power-plan-menu .menu-content {
+	margin: 10px;
+}
+
+.power-plan-menu .menu-content .button {
+	background-color: transparent;
+	font-weight: 600;
+	font-size: 13px;
+	font-family: 'Segoe UI';
+	padding: 6px 12px;
+	margin: 1px 0;
+	border: none;
+	border-radius: 4px;
+	text-align: left;
+}
+
+.power-plan-menu .menu-content .button.active {
+	background-color: var(--secondary-accent-color);
+	border: 1px solid var(--surface2);
 }

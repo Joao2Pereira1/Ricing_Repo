@@ -2,78 +2,94 @@
 /* === COLOR VARIABLES === */
 /* ===================== */
 :root {
-    /* Catppuccin Mocha color palette */
-    --mauve: #cba6f7;
-    --red: #f38ba8;
-    --yellow: #f9e2af;
-    --green: #a6e3a1;
-    --teal: #94e2d5;
-    --blue: #89b4fa;
-    --lavender: #b4befe;
+  /* Catppuccin Mocha color palette */
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
 
-    /* Overlay colors */
-    --overlay2: #9399b2;
-    --overlay1: #7f849c;
-    --overlay0: #6c7086;
+  /* Overlay colors */
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
 
-    /* Surface colors */
-    --surface2: #585b70;
-    --surface1: #45475a;
+  /* Surface colors */
+  --surface2: #585b70;
+  --surface1: #45475a;
 
-    --bg-color1: #191919;
-    --bg-color2: #333333;
+  --bg-color1: #191919;
+  --bg-color2: #333333;
 
-    /*! para mudar um tema basta mexer nestas 2 cores, que manipula cor dos icones,
+  /*! para mudar um tema basta mexer nestas 2 cores, que manipula cor dos icones,
 		cor dos icones ao passar por cima, cor da barra e cor de alguns detalhes
 		--primary-accent-color: cor dos icones e outros detalhes como cor do texto
 		no menu de desligar, detalhes no calendario, workspace widget, etc
 		--secondary-accent-color: cor ao passar por cima dos icones e outros
 		detalhes minimos*/
 
-    /* ! no futuro podes mudar ate as cores do texto para mudar mais coisas */
-    /* ! para mudar a cor da borda do calendar e disk widget, é no config.yaml */
+  /* ! no futuro podes mudar ate as cores do texto para mudar mais coisas */
+  /* ! para mudar a cor da borda do calendar e disk widget, é no config.yaml */
 
-    /* === MAIN COLORS === */
-    /* === EVERFOREST THEME ===*/
-    --primary-accent-color: #a7c080;
-    --secondary-accent-color: #83c092;
-    --bar-color: #1e2326;
-    --power-button: #e67e80;
-    --uptime-color: #414b50;
-    --home-menu-bg: #272e33;
-    --text: #d3c6aa;
-    --subtext1: #9da9a0;
-    --subtext0: #859289;
+  /* === MAIN COLORS === */
+  /* === EVERFOREST THEME ===*/
+  --primary-accent-color: #a7c080;
+  --secondary-accent-color: #83c092;
+  --bar-color: #1e2326;
+  --power-button: #e67e80;
+  --uptime-color: #414b50;
+  --home-menu-bg: #272e33;
+  --text: #d3c6aa;
+  --subtext1: #9da9a0;
+  --subtext0: #859289;
 
-    --text1: #d4d9eb;
-    --text2: #8f929e;
-    --text3: #9399b2;
-    --text4: #7f849c;
+  --text1: #d4d9eb;
+  --text2: #8f929e;
+  --text3: #9399b2;
+  --text4: #7f849c;
 
-    /* === ANIMATION SYSTEM === */
-    --anim-fast: 120ms ease;
-    --anim: 180ms ease;
-    --anim-slow: 260ms ease;
+  /* === ANIMATION SYSTEM === */
+  --anim-fast: 120ms ease;
+  --anim: 180ms ease;
+  --anim-slow: 260ms ease;
 
-    /* === EFFECT COLORS === */
-    --accent-soft: color-mix(in srgb, var(--primary-accent-color) 18%, transparent);
-    --accent-glow: color-mix(in srgb, var(--primary-accent-color) 45%, transparent);
+  /* === EFFECT COLORS === */
+  --accent-soft: color-mix(in srgb, var(--primary-accent-color) 18%, transparent);
+  --accent-glow: color-mix(in srgb, var(--primary-accent-color) 45%, transparent);
 
-    /* === GLOBAL RADIUS === */
-    --radius-sm: 6px;
-    --radius: 10px;
-    --radius-lg: 14px;
+  /* === GLOBAL RADIUS === */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
 
-    /*! text1: cor dos labels BSP, 20% 18:34 */
-    /*! text: cor de detalhes do calendario e isso*/
+  /*! text1: cor dos labels BSP, 20% 18:34 */
+  /*! text: cor de detalhes do calendario e isso*/
 
-    /* ! se quiseres podes remover contraste dos icones,  basta
+  /* ! se quiseres podes remover contraste dos icones,  basta
 		colocar no ficheiro .yaml aquilo do label-shadow:
 					label_shadow:
 							enabled: true
 							color: "black"
 							radius: 3
 							offset: [ 1, 1]*/
+}
+
+/* ================= */
+/* === BASE STYLES === */
+/* ================= */
+* {
+  font-size: 12px;
+  color: var(--subtext0);
+  font-weight: 700;
+  font-family: "JetBrainsMono NFP";
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color var(--anim),
+    color var(--anim),
+    transform var(--anim-fast);
 }
 
 /* ================= */
@@ -86,8 +102,8 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
 
   box-shadow:
-  0 6px 24px rgba(0, 0, 0, 0.45),
-  inset 0 1px rgba(255, 255, 255, 0.04);
+    0 6px 24px rgba(0, 0, 0, 0.45),
+    inset 0 1px rgba(255, 255, 255, 0.04);
 
   padding: 2px 6px;
 }
@@ -103,7 +119,6 @@
 .widget:hover {
   background-color: var(--accent-soft);
   transform: translateY(-1px);
-  box-shadow: 0 0 8px var(--accent-glow);
 }
 
 
@@ -832,8 +847,8 @@
   padding: 0 4px;
   border-radius: 8px;
   transition:
-  background-color 200ms ease,
-  transform 150ms ease;
+    background-color 200ms ease,
+    transform 150ms ease;
 }
 
 .battery-widget:hover,
@@ -846,8 +861,8 @@
 .battery-widget .icon {
   /* tema padrão */
   transition:
-  color 150ms ease,
-  text-shadow 150ms ease;
+    color 150ms ease,
+    text-shadow 150ms ease;
 }
 
 /* Mudança de cor dependendo do status */
@@ -1223,4 +1238,38 @@
 
 .quick-launch-popup .preview.edit .preview-btn.save:hover {
   background: rgb(19, 90, 204);
+}
+
+/* ================= */
+/* === POWER PLAN WIDGET === */
+/* ================= */
+
+.power-plan-widget {
+  padding: 0 6px 0 6px;
+}
+
+.power-plan-menu {
+  background-color: var(--bar-color);
+}
+
+/* Menu Style */
+.power-plan-menu .menu-content {
+  margin: 10px;
+}
+
+.power-plan-menu .menu-content .button {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: 'Segoe UI';
+  padding: 6px 12px;
+  margin: 1px 0;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.power-plan-menu .menu-content .button.active {
+  background-color: var(--secondary-accent-color);
+  border: 1px solid var(--surface2);
 }

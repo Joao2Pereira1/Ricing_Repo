@@ -1,0 +1,56 @@
+/* ============================================================ */
+/* SAKURA                                                       */
+/*     Rosa pastel japonês — branco suave e vermelho-cereja    */
+/* ============================================================ */
+:root {
+	--primary-color: #c9607a;
+	--secondary-color: #e8a0b0;
+	--bg-default: #120a0e;
+	--bg-panel: #1c1016;
+	--bg-hover: rgba(201, 96, 122, 0.08);
+	--bg-selected: rgba(201, 96, 122, 0.13);
+	--bg-focus: rgba(232, 160, 176, 0.13);
+	--text-default: #f5dde3;
+	--text-muted: rgba(245, 221, 227, 0.5);
+	--text-highlight: #e8a0b0;
+	--border-color: rgba(245, 221, 227, 0.07);
+	--shadow-color: rgba(0, 0, 0, 0.75);
+	--gradient-primary: linear-gradient(90deg, #c9607a 0%, #e8a0b0 100%);
+	--gradient-secondary: linear-gradient(180deg, #1c1016 0%, #0e080b 100%);
+	--gradient-hover: linear-gradient(180deg, rgba(201, 96, 122, 0.08) 0%, rgba(201, 96, 122, 0) 100%);
+	--scrollbar-bg: rgba(18, 10, 14, 0.7);
+	--scrollbar-thumb: rgba(201, 96, 122, 0.5);
+	--command-bg: #1c1016;
+	--command-gradient: linear-gradient(180deg, #1c1016 0%, #0e080b 100%);
+	--tooltip-bg: #0e080b;
+	--tooltip-gradient: linear-gradient(160deg, #180c10 0%, #0b060a 100%);
+	--tooltip-shadow: rgba(0, 0, 0, 0.85);
+	--tooltip-border: rgba(201, 96, 122, 0.25);
+	--editor-line-highlight: rgba(201, 96, 122, 0.08);
+	--editor-cursor: #e8a0b0;
+	--sidebar-bg: #120a0e;
+	--sidebar-bg-alt: #0e080b;
+	--sidebar-border: rgba(245, 221, 227, 0.05);
+	--sidebar-selection: rgba(201, 96, 122, 0.12);
+	--sidebar-selection-border: rgba(232, 160, 176, 0.4);
+	--sidebar-text: #d48090;
+	--sidebar-text-muted: rgba(201, 96, 122, 0.6);
+	--sidebar-text-active: #f5dde3;
+	--accent-color: #e8a0b0;
+	--accent-soft: rgba(201, 96, 122, 0.09);
+	--sidebar-shadow: 4px 0 24px rgba(0, 0, 0, 0.6);
+	--file-selected-bg: rgba(201, 96, 122, 0.12);
+	--file-selected-border: rgba(232, 160, 176, 0.42);
+	--file-selected-glow: rgba(201, 96, 122, 0.15);
+	--indent-guide: rgba(201, 96, 122, 0.1);
+	--indent-guide-active: rgba(232, 160, 176, 0.35);
+	--focus-outline: rgba(232, 160, 176, 0.35);
+	--focus-glow: rgba(201, 96, 122, 0.12);
+	--input-border: rgba(201, 96, 122, 0.22);
+	--input-border-focus: rgba(232, 160, 176, 0.45);
+	--selection-highlight: rgba(232, 160, 176, 0.13);
+	--word-highlight: rgba(201, 96, 122, 0.12);
+	--word-highlight-border: rgba(232, 160, 176, 0.3);
+	--notification-border: rgba(201, 96, 122, 0.22);
+	--panel-border: rgba(201, 96, 122, 0.1);
+}
