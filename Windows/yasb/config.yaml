@@ -1,0 +1,763 @@
+watch_stylesheet: false
+watch_config: false
+debug: false
+komorebi:
+    start_command: "komorebic start --whkd"
+    stop_command: "komorebic stop --whkd"
+    reload_command: "komorebic stop --whkd && komorebic start --whkd"
+bars:
+    status-bar:
+        enabled: true
+        screens: ["*"]
+        class_name: "yasb-bar"
+        alignment:
+            position: "top"
+            center: false
+        animation:
+            enabled: true
+            duration: 800
+        blur_effect:
+            enabled: true
+            acrylic: false
+            dark_mode: false
+            round_corners: true
+            border_color: None
+        # full screen mode set the windows_flags to the opposite value
+        window_flags:
+            always_on_top: false
+            windows_app_bar: true
+        dimensions:
+            width: "100%"
+            height: 26
+        padding:
+            top: 3
+            left: 3
+            bottom: 1
+            right: 3
+        # removi as apps da barra, podes colocar de novo quando quiseres
+        widgets:
+            left:
+                [
+                    "home",
+                    "quick_launch",
+                    "wallpapers",
+                    "power_plan",
+                    "disk",
+                    "komorebi_active_layout",
+                    "komorebi_workspaces",
+                    "media",
+                ]
+            center: ["active_window"]
+            right:
+                [
+                    "systray",
+                    "vscode",
+                    "game_mode",
+                    "monitorian",
+                    "brightness",
+                    "wifi",
+                    "volume",
+                    "battery",
+                    "clock",
+                    "notifications",
+                    "power_menu",
+                ]
+widgets:
+    home:
+        type: "yasb.home.HomeWidget"
+        options:
+            label: "<span>\ue70f</span>"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            menu_list:
+                - { title: "User Home", path: "~" }
+                - {
+                      title: "Download",
+                      path: "C:\\Users\\João Pereira\\Downloads",
+                  }
+                - {
+                      title: "Documents",
+                      path: "C:\\Users\\João Pereira\\Documents",
+                  }
+                - { title: "Wallpapers", path: "C:\\Wallpapers" }
+                - { title: "Games", path: "C:\\Games" }
+                - { title: "Programming", path: "C:\\CODE" }
+
+        system_menu: true
+        power_menu: false
+        blur: false
+        round_corners: true
+        border_color: "system"
+        round_corners_type: "normal"
+        distance: 10
+        container_padding:
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+    apps:
+        type: "yasb.applications.ApplicationsWidget"
+        options:
+            container_padding:
+                top: 0
+                left: 4
+                bottom: 0
+                right: 0
+            label: "{data}"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            app_list:
+                # - { icon: "\uf422", launch: "search" }
+                - {
+                      icon: "\ue746",
+                      launch: "C:\\Users\\João Pereira\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+                  }
+                - {
+                      icon: "\uf489",
+                      launch: "C:\\Users\\João Pereira\\AppData\\Local\\Programs\\Warp\\warp.exe",
+                  }
+                # - { icon: "\uf1ff",launch: "Discord.exe" }
+                - {
+                      icon: "\udb82\ude1e",
+                      launch: "C:\\Users\\João Pereira\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+                  }
+
+    komorebi_workspaces:
+        type: "komorebi.workspaces.WorkspaceWidget"
+        options:
+            label_offline: "<span>\ueb96</span>"
+            label_default_name: ""
+            label_zero_index: false
+            hide_empty_workspaces: true
+            hide_if_offline: true
+            container_padding:
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+            label_shadow:
+                enabled: false
+                color: "black"
+                radius: 5
+                offset: [0, 0]
+    komorebi_active_layout:
+        type: "komorebi.active_layout.ActiveLayoutWidget"
+        options:
+            hide_if_offline: true
+            label: "{layout_name}"
+            layouts:
+                [
+                    "bsp",
+                    "columns",
+                    "rows",
+                    "grid",
+                    "scrolling",
+                    "vertical_stack",
+                    "horizontal_stack",
+                    "ultrawide_vertical_stack",
+                    "right_main_vertical_stack",
+                ]
+            layout_icons:
+                bsp: "\uebeb"
+                columns: "\uebf7"
+                rows: "\uec01"
+                grid: "\udb81\udf58"
+                scrolling: "\uebf7"
+                vertical_stack: "\uebee"
+                horizontal_stack: "\uebf0"
+                ultrawide_vertical_stack: "\uebee"
+                right_main_vertical_stack: "\uebf1"
+                monocle: "\uf06f"
+                maximized: "\uf06f"
+                floating: "\uf2d2"
+                paused: "\udb83\udf89"
+                tiling: "\udb81\ude40"
+            callbacks:
+                on_left: "toggle_layout_menu"
+                on_middle: "prev_layout"
+                on_right: "next_layout"
+            layout_menu:
+                blur: false
+                round_corners: false
+                round_corners_type: "normal"
+                border_color: "System"
+                alignment: "left"
+                direction: "down"
+                offset_top: 6
+                offset_left: 0
+                show_layout_icons: true
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    wallpapers:
+        type: "yasb.wallpapers.WallpapersWidget"
+        options:
+            label: "<span>\udb83\ude09</span>"
+            # Example path to folder with images. Can be a single string or a list of strings.
+            # image_path: "C:\\Users\\{Username}\\Images"
+            image_path:
+                - "C:\\Wallpapers\\Yasb"
+            change_automatically: false # Automatically change wallpaper
+            update_interval: 60 # If change_automatically is true, update interval in seconds
+            gallery:
+                enabled: true
+                blur: true
+                image_width: 220
+                image_per_page: 6
+                gallery_columns: 0 # 0 = auto, matches image_per_page for a single row
+                horizontal_position: "center" # left/center/right placement on screen
+                vertical_position: "center" # top/center/bottom placement
+                position_offset: 0 # minimum gap (px) from screen edges - see below for advanced options
+                respect_work_area: true # clamp to OS work area (avoids Windows taskbar)
+                show_buttons: false
+                orientation: "portrait"
+                image_spacing: 8
+                lazy_load: true
+                lazy_load_fadein: 400
+                image_corner_radius: 12
+            run_after: # List of functions to run after wallpaper is updated
+                - "wal -s -t -e -q -n -i {image}" # Example command to run after wallpaper is updated
+                - "cmd.exe /c start /min pwsh ./yasb.ps1" # Example command to run after wallpaper is updated
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            callbacks:
+                on_left: "toggle_gallery"
+                on_middle: "exec explorer.exe C:\\Wallpapers\\Yasb"
+                on_right: "change_wallpaper"
+    whkd:
+        type: "yasb.whkd.WhkdWidget"
+        options:
+            label: "<span>\uf11c</span>"
+            special_keys:
+                - key: "win"
+                  key_replace: "\ue70f"
+                - key: "ctrl"
+                  key_replace: "Ctrl"
+                - key: "alt"
+                  key_replace: "Alt"
+                - key: "shift"
+                  key_replace: "Shift"
+                - key: "left"
+                  key_replace: "\u2190"
+                - key: "right"
+                  key_replace: "\u2192"
+                - key: "up"
+                  key_replace: "\u2191"
+                - key: "down"
+                  key_replace: "\u2193"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    active_window:
+        type: "yasb.active_window.ActiveWindowWidget"
+        options:
+            label: "{win[title]}"
+            label_alt: "[exe='{win[process][name]}' pid={win[process][pid]} path={win[process][path]}]"
+            label_no_window: "Lenovo Gaming - Pereira 👨🏻‍💻"
+            label_icon: true
+            label_icon_size: 12
+            max_length: 50
+            max_length_ellipsis: "..."
+            monitor_exclusive: true
+            callbacks:
+                on_left: "toggle_label"
+                on_right: "exec taskmgr" # task manager
+    disk:
+        type: "yasb.disk.DiskWidget"
+        options:
+            label: "<span>\uf473</span>"
+            label_alt: "<span>\uf473</span>"
+            group_label:
+                volume_labels:
+                    [
+                        "C",
+                        "D",
+                        "E",
+                        "F",
+                        "G",
+                        "H",
+                        "I",
+                        "J",
+                        "K",
+                        "L",
+                        "M",
+                        "N",
+                        "O",
+                        "P",
+                        "Q",
+                        "R",
+                        "S",
+                        "T",
+                        "U",
+                        "V",
+                        "W",
+                        "X",
+                        "Y",
+                        "Z",
+                    ]
+                show_label_name: false
+                blur: true
+                round_corners: true
+                round_corners_type: "small"
+                border_color: "System"
+                alignment: "center"
+                offset_top: 0
+            callbacks:
+                on_left: "toggle_group"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    vscode:
+        type: "yasb.vscode.VSCodeWidget"
+        options:
+            label: "<span>\udb82\ude1e</span>"
+            label_alt: "<span>\udb82\ude1e</span> recents"
+            menu_title: "<span style='font-weight:bold'>VScode</span> recents"
+            max_field_size: 50
+            folder_icon: "\uf114"
+            file_icon: "\uf016"
+            truncate_to_root_dir: false
+            hide_folder_icon: false
+            hide_file_icon: false
+            max_number_of_folders: 30
+            max_number_of_files: 30 # set to 0 if you only want folders
+            modified_date_format: "Date modified: %Y-%m-%d %H:%M"
+            cli_command: "code" # or "codium" or "windsurf" or any other CLI command to open the workspace
+            menu:
+                blur: true
+                round_corners: true
+                round_corners_type: "small"
+                alignment: "center"
+                offset_top: 0
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    game_mode:
+        type: "yasb.custom.CustomWidget"
+        options:
+            label: "<span>\udb80\udeb4</span>"
+            label_alt: "<span>\udb80\udeb4</span> - Game Mode"
+            tooltip: true
+            class_name: "game-info-widget"
+            callbacks:
+                on_left: "exec powershell -Command \"Start-Process 'C:\\Program Files\\WindowsApps\\E046963F.LenovoCompanion_10.2511.10.0_x64__k1h2ywk1493x8\\LenovoVantage\\LenovoVantage.exe'; Start-Process 'C:\\G-Menu\\G-Menu.exe'\""
+                on_right: "exec powershell -Command \"Start-Process 'C:\\Program Files (x86)\\Razer\\Razer Cortex\\RazerCortex.exe';\""
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    monitorian:
+        type: "yasb.custom.CustomWidget"
+        options:
+            label: "<span>\uf26c</span>"
+            label_alt: "<span>\uf26c</span> Monitor Brightness"
+            tooltip: true
+            class_name: "monitorian-widget"
+            callbacks:
+                on_left: "exec powershell -Command Start-Process Monitorian"
+                on_right: "toggle_label"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    brightness:
+        type: "yasb.brightness.BrightnessWidget"
+        options:
+            label: "<span>{icon}</span>"
+            label_alt: "Brightness {percent}%"
+            tooltip: true
+            hide_unsupported: true
+            brightness_toggle_level: [0, 50, 100]
+            auto_light: false
+            auto_light_icon: "\udb80\udce1"
+            auto_light_night_level: 35
+            auto_light_night_start_time: "19:00"
+            auto_light_night_end_time: "06:45"
+            auto_light_day_level: 75
+            brightness_icons: [
+                    "\udb80\udcde", # Icon for 0-25% brightness
+                    "\udb80\udcdd", # Icon for 26-50% brightness
+                    "\udb80\udcdf", # Icon for 51-75% brightness
+                    "\udb80\udce0", # Icon for 76-100% brightness
+                ]
+            brightness_menu:
+                blur: true
+                round_corners: true
+                round_corners_type: "normal"
+                border_color: "System"
+                alignment: "right"
+                direction: "down"
+            callbacks:
+                on_left: "exec cmd.exe /c start ms-settings:display"
+                on_right: "toggle_label"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    media:
+        type: "yasb.media.MediaWidget"
+        options:
+            label: "{artist}"
+            label_alt: "{title}"
+            max_field_size:
+                label: 30
+                label_alt: 64
+            show_thumbnail: false
+            controls_only: false
+            controls_left: true
+            hide_empty: true
+            icons:
+                prev_track: "\uf048"
+                next_track: "\uf051"
+                play: "▶"
+                pause: "\uf04c"
+            media_menu:
+                blur: true
+                round_corners: true
+                alignment: "right"
+                direction: "down"
+                offset_top: 6
+                offset_left: 0
+                thumbnail_corner_radius: 4
+                thumbnail_size: 90
+                max_title_size: 80
+                max_artist_size: 20
+                show_source: true
+            label_shadow:
+                enabled: true
+                color: "#000000"
+                radius: 1
+                offset: [1, 1]
+            callbacks:
+                on_left: "toggle_media_menu"
+                on_middle: "do_nothing"
+                on_right: "toggle_label"
+            container_padding:
+                top: 0
+                left: 16
+                bottom: 0
+                right: 16
+    bluetooth:
+        type: "yasb.bluetooth.BluetoothWidget"
+        options:
+            label: "<span>{icon}</span> {device_count}"
+            label_alt: "{device_name}"
+            label_no_device: "No devices connected"
+            label_device_separator: ", "
+            max_length: 10
+            max_length_ellipsis: "..."
+            icons:
+                bluetooth_on: "\udb80\udcaf"
+                bluetooth_off: "\udb80\udcb2"
+                bluetooth_connected: "\udb80\udcb1"
+            device_aliases:
+                - name: "T5.0"
+                  alias: "\uf025"
+            callbacks:
+                on_left: "exec cmd.exe /c start ms-settings:bluetooth"
+                on_right: "toggle_label"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    wifi:
+        type: "yasb.wifi.WifiWidget"
+        options:
+            label: "<span>{wifi_icon}</span>"
+            label_alt: "{wifi_name} {wifi_strength}%"
+            update_interval: 5000
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            callbacks:
+                on_left: "exec cmd.exe /c start ms-settings:network"
+                on_middle: "exec cmd /c ncpa.cpl" # open network settings"
+                on_right: "toggle_label"
+            container_padding:
+                top: 0
+                left: 8
+                bottom: 0
+                right: 8
+            wifi_icons: [
+                    "\udb82\udd2e", # Icon for 0% strength
+                    "\udb82\udd1f", # Icon for 1-20% strength
+                    "\udb82\udd22", # Icon for 21-40% strength
+                    "\udb82\udd25", # Icon for 41-80% strength
+                    "\udb82\udd28", # Icon for 81-100% strength
+                ]
+    clock:
+        type: "yasb.clock.ClockWidget"
+        options:
+            label: "{%H:%M}"
+            label_alt: "<span>\uf017</span>{%A, %B %d. %Y %H:%M}"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            timezones: []
+            calendar:
+                round_corners: true
+                round_corners_type: "small"
+                border_color: "System"
+                alignment: "center"
+                offset_top: 0
+    volume:
+        type: "yasb.volume.VolumeWidget"
+        options:
+            label: "<span>{icon}</span> {level}"
+            label_alt: "{volume}"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            volume_icons:
+                - "\ueee8" # Icon for muted
+                - "\uf026" # Icon for 0-10% volume
+                - "\uf027" # Icon for 11-30% volume
+                - "\uf027" # Icon for 31-60% volume
+                - "\uf028" # Icon for 61-100% volume
+            audio_menu:
+                blur: true
+                round_corners: true
+                round_corners_type: "small"
+                border_color: "System"
+                alignment: "center"
+                direction: "down"
+                offset_top: 0
+            callbacks:
+                on_left: "toggle_volume_menu"
+                on_middle: "toggle_mute"
+                on_right: "exec cmd.exe /c start ms-settings:sound"
+    battery:
+        type: "yasb.battery.BatteryWidget"
+        options:
+            label: "<span>{icon}</span>{percent}%"
+            label_alt: "<span>{icon}</span> time: {time_remaining} {full_capacity}/{designed_capacity} mWh ({health}%)"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            #hide_unsupported: true
+            charging_options:
+                icon_format: "{charging_icon}"
+            callbacks:
+                on_left: "exec cmd.exe /c powercfg.cpl"
+                on_right: "toggle_label"
+    notifications:
+        type: "yasb.notifications.NotificationsWidget"
+        options:
+            label: "<span>\uf476</span> {count}"
+            label_alt: "{count} notifications"
+            hide_empty: true
+            tooltip: false
+            callbacks:
+                on_left: "toggle_notification"
+                on_right: "do_nothing"
+                on_middle: "toggle_label"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    power_plan:
+        type: "yasb.power_plan.PowerPlanWidget"
+        options:
+            label: "<span>\uf0e7</span>"
+            label_alt: "<span>\uf0e7</span> {active_plan}"
+            update_interval: 5000
+            menu:
+                blur: true
+                round_corners: true
+                round_corners_type: "normal"
+                border_color: "system"
+                alignment: "center"
+                direction: "down"
+                offset_top: 6
+                offset_left: 0
+            callbacks:
+                on_left: "toggle_menu"
+                on_middle: "do_nothing"
+                on_right: "toggle_label"
+
+    power_menu:
+        type: "yasb.power_menu.PowerMenuWidget"
+        options:
+            label: "\uf011"
+            uptime: True
+            blur: True
+            blur_background: True
+            animation_duration: 200
+            button_row: 5
+            buttons:
+                shutdown: ["\uf011", "Shut Down"]
+                restart: ["\uead2", "Restart"]
+                signout: ["\udb80\udf43", "Sign out"]
+                hibernate: ["\uf28e", "Hibernate"]
+                sleep: ["\u23fe", "Sleep"]
+                cancel: ["", "Cancel"]
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+    systray:
+        type: "yasb.systray.SystrayWidget"
+        options:
+            class_name: "systray"
+            label_collapsed: "◀"
+            label_expanded: "▶"
+            label_position: "right" # Can be "left" or "right"
+            icon_size: 18 # Can be any integer between 8 and 64
+            pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
+            show_unpinned: false
+            show_unpinned_button: true
+            show_battery: false
+            show_volume: false
+            show_network: true
+    quick_launch:
+        type: "yasb.quick_launch.QuickLaunchWidget"
+        options:
+            label: "<span>\uf002</span>"
+            label_shadow:
+                enabled: true
+                color: "black"
+                radius: 3
+                offset: [1, 1]
+            search_placeholder: "Search applications..."
+            max_results: 50
+            show_icons: true
+            icon_size: 32
+            providers:
+                apps:
+                    enabled: true
+                    prefix: "*"
+                    priority: 0
+                    show_recent: true
+                    max_recent: 5
+                    show_description: true
+                calculator:
+                    enabled: true
+                    prefix: "="
+                    priority: 1
+                clipboard_history:
+                    enabled: true
+                    prefix: "cb"
+                    priority: 2
+                    max_items: 30
+                currency:
+                    enabled: true
+                    prefix: "$"
+                    priority: 3
+                bookmarks:
+                    enabled: true
+                    prefix: "b"
+                    priority: 4
+                    browser: "all"
+                    profile: "Default"
+                web_search:
+                    enabled: true
+                    prefix: "?"
+                    priority: 5
+                    engine: "google"
+                system_commands:
+                    enabled: true
+                    prefix: ">"
+                    priority: 6
+                settings:
+                    enabled: true
+                    prefix: "@"
+                    priority: 7
+                kill_process:
+                    enabled: true
+                    prefix: "k"
+                    priority: 8
+                port_viewer:
+                    enabled: true
+                    prefix: "pv"
+                    priority: 9
+                    tcp_listening_only: true
+                    include_established: false
+                file_search:
+                    enabled: true
+                    prefix: "/"
+                    priority: 10
+                    backend: "auto"
+                    show_path: true
+                unit_converter:
+                    enabled: true
+                    prefix: "~"
+                    priority: 11
+                emoji:
+                    enabled: true
+                    prefix: "."
+                    priority: 12
+                color:
+                    enabled: true
+                    prefix: "c"
+                    priority: 13
+                world_clock:
+                    enabled: true
+                    prefix: "tz"
+                    priority: 14
+                snippets:
+                    enabled: true
+                    prefix: ";"
+                    priority: 15
+                    type_delay: 200
+                hacker_news:
+                    enabled: true
+                    prefix: "hn"
+                    priority: 16
+                    cache_ttl: 300
+                    max_items: 30
+                dev_tools:
+                    enabled: true
+                    prefix: "dev"
+                    priority: 17
+                ip_info:
+                    enabled: true
+                    prefix: "ip"
+                    priority: 18
+                vscode:
+                    enabled: true
+                    prefix: "vs"
+                    priority: 19
+            popup:
+                width: 720
+                height: 480
+                blur: true
+                round_corners: true
+                round_corners_type: "normal"
+                border_color: "system"
+                dark_mode: true
+            callbacks:
+                on_left: "toggle_quick_launch"
+            keybindings:
+                - keys: "alt+space"
+                  action: "toggle_quick_launch"

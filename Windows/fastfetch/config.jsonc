@@ -1,0 +1,151 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+	"display": {
+	    "separator": ": ",     // Separator between keys and values
+	    "color": {
+	        "keys": "blue",    // Key color
+	        "title": "red"     // Title color
+	    },
+	    "key": {
+	        "width": 15,       // Aligns keys to this width
+	        "type": "string"   // string, icon, both, or none
+	    },
+	    "bar": {
+	        "width": 10,       // Width of percentage bars
+	        "char": {
+	            "elapsed": "■", // Character for elapsed portion
+	            "total": "-",    // Character for total portion
+	        },
+	    },
+	    "percent": {
+	        "type": 9,         // 1=number, 2=bar, 3=both, 9=colored number
+	        "color": {
+	            "green": "green",
+	            "yellow": "light_yellow",
+	            "red": "light_red"
+	        }
+	    }
+	},
+
+        "logo": {
+	    "source": "windows",
+	    "width": 34,
+	    "height": 12,
+	    "padding": {
+	        "top": 2,
+	        "right": 4
+	    }
+	},
+	"modules": [
+	    {
+	      "type": "command",
+	      "key": "  ",
+	      "keyColor": "blue",
+	      "text": "splash=$(hyprctl splash);echo $splash"
+	    },
+	    {
+	      "type": "custom",
+	      "format": "┌─────────────────────────────────────────────────┐"
+	    },
+	    {
+	      "type": "chassis",
+	      "key": "  󰇺 Chassis",
+	      "format": "{1} {2~0,10}"
+	    },
+	    {
+	      "type": "os",
+	      "key": "  {icon} {name}",
+	      "format": "{name}",
+	      "keyColor": "red"
+	    },
+	    {
+	      "type": "kernel",
+	      "key": "   Kernel",
+	      "format": "{2}",
+	      "keyColor": "red"
+	    },
+	    {
+	      "type": "packages",
+	      "key": "  󰏗 Packages",
+	      "format": "scoop, winget",
+	      "keyColor": "green"
+	    },
+	    {
+	      "type": "display",
+	      "key": "  󰍹 Display",
+	      "format": "{1}x{2} @ {3}Hz [{7}]",
+	      "keyColor": "green"
+	    },
+	    {
+	      "type": "terminal",
+	      "key": "   Terminal",
+	      "format": "{1}",
+	      "keyColor": "yellow"
+	    },
+	    {
+	      "type": "wm",
+	      "key": "  󱗃 WM",
+	      "format": "{pretty-name} (komorebic)",
+	      "keyColor": "yellow"
+	    },
+	    {
+	      "type": "custom",
+	      "format": "└─────────────────────────────────────────────────┘"
+	    },
+	    "break",
+	    {
+	      "type": "title",
+	      "key": "  ",
+	      "format": "{6} {7} {8}"
+	    },
+	    {
+	      "type": "custom",
+	      "format": "┌─────────────────────────────────────────────────┐"
+	    },
+	    {
+	      "type": "cpu",
+	      "format": "{1} @ {7}",
+	      "key": "   CPU",
+	      "keyColor": "blue"
+	    },
+	    {
+	      "type": "gpu",
+	      "format": "{name} [{type}]",
+	      "key": "  󰊴 GPU",
+	      "keyColor": "blue"
+	    },
+	    {
+	      "type": "command",
+	      "text": "glxinfo 2>/dev/null | grep 'OpenGL version' | sed 's/.*Mesa /amdgpu (Mesa /' | sed 's/-cachyos[0-9.]*/-cachyos)/' | awk '{print $1, $2, $3}'",
+	      "key": "   GPU Driver",
+	      "keyColor": "magenta"
+	    },
+	    {
+	      "type": "memory",
+	      "key": "   Memory ",
+	      "keyColor": "magenta"
+	    },
+	    {
+	      "type": "command",
+	      "key": "  󱦟 OS Age ",
+	      "keyColor": "red",
+	      "text": "bash -c 'DAYS=$(( ($(date +%s) - $(stat -c %W /)) / 86400 )); DATE=$(LC_TIME=C date -d @$(stat -c %W /) \"+%b %d, %Y\"); echo \"$DAYS days ($DATE)\"'"
+	    },
+	    {
+	      "type": "uptime",
+	      "key": "  󱫐 Uptime ",
+	      "keyColor": "red"
+	    },
+	    {
+	      "type": "custom",
+	      "format": "└─────────────────────────────────────────────────┘"
+	    },
+	    {
+	      "type": "colors",
+	      "paddingLeft": 2,
+	      "symbol": "circle"
+	    },
+	    "break"
+	  ]
+}

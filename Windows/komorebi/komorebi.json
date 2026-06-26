@@ -11,7 +11,7 @@
     "border_width": 0,
     "border_offset": 0,
     "border_colours": {
-        "single": "#88c0d0",
+        "single": "#ff7a45",
         "stack": "#00ff99",
         "floating": "#00ff99",
         "monocle": "#f38ba8",
@@ -28,12 +28,6 @@
             "movement": "EaseOutBack",
             "transparency": "Linear"
         }
-    },
-    "theme": {
-        "palette": "Base16",
-        "name": "Ashes",
-        "unfocused_border": "Base03",
-        "bar_accent": "Base0D"
     },
     "stackbar": {
         "height": 30,

@@ -1,0 +1,87 @@
+.shell powershell
+
+# algo que existe é que tu podes colocar um shortcut especifico para quando uma janela esta focada, ver documentacao komorebic
+
+# Reload whkd configuration
+# alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
+alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+alt + shift + o         : komorebic reload-configuration
+
+# alt + i                 : komorebic toggle-shortcuts
+
+# App shortcuts - these require shell to be pwsh / powershell
+# The apps will be focused if open, or launched if not open
+# alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
+# alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+
+alt + x                 : komorebic minimize
+alt +  q                : komorebic close
+alt + shift + f 	    : komorebic toggle-maximize
+
+# alt + shift + r         : komorebic retile
+# alt + p                 : komorebic toggle-pause
+
+# pelos vistos c de cedilha nao funciona
+
+# Focus windows
+alt + h      : komorebic focus left
+alt + j        : komorebic focus down
+alt + k         : komorebic focus up
+alt + l     : komorebic focus right
+
+# mudar foco entre janelas
+alt + oem_4     : komorebic cycle-focus previous # oem_4 is '
+alt + oem_6     : komorebic cycle-focus next # oem_6 is «
+
+# Move windows
+alt + shift + h         : komorebic move left
+alt + shift + j           : komorebic move down
+alt + shift + k          : komorebic move up
+alt + shift + l         : komorebic move right
+alt + shift + return    : komorebic promote
+
+# usar stack
+ctrl + alt  + h : komorebic stack left
+ctrl + alt  + j : komorebic stack down
+ctrl + alt  + k : komorebic stack up
+ctrl + alt  + l : komorebic stack right
+
+
+# navegar dentro do stack ou usar barra de separadores
+alt + shift + oem_4     : komorebic cycle-stack previous # oem_4 is '
+alt + shift + oem_6     : komorebic cycle-stack next # oem_6 is  «
+ctrl + alt + u          : komorebic unstack
+
+# Resize
+alt + oem_minus              : komorebic resize-axis horizontal increase
+alt + oem_plus         : komorebic resize-axis horizontal decrease
+alt + shift + oem_minus      : komorebic resize-axis vertical increase
+alt + shift + oem_plus : komorebic resize-axis vertical decrease
+
+# Manipulate windows
+alt + shift + c                 : komorebic toggle-float
+# alt + shift + f         : komorebic toggle-monocle
+
+# fechar todas as janelas
+alt + shift + q : & "C:\Backup\03_Scripts\powershell\close-all-windows.ps1"
+
+# atalho para abrir windows terminal, quando wt atualiza, tens de atualizar path
+alt + return : & explorer.exe shell:AppsFolder\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App
+
+# Layouts
+alt + z                 : komorebic flip-layout horizontal
+alt + c                 : komorebic flip-layout vertical
+
+# Focar workspaces no laptop
+alt + 1 : komorebic focus-monitor-workspace 0 0
+alt + 2 : komorebic focus-monitor-workspace 0 1
+alt + 3 : komorebic focus-monitor-workspace 0 2
+alt + 4 : komorebic focus-monitor-workspace 0 3
+alt + 5 : komorebic focus-monitor-workspace 0 4
+
+# Mover janelas para workspaces do laptop
+alt + shift + 1 : komorebic move-to-monitor-workspace 0 0
+alt + shift + 2 : komorebic move-to-monitor-workspace 0 1
+alt + shift + 3 : komorebic move-to-monitor-workspace 0 2
+alt + shift + 4 : komorebic move-to-monitor-workspace 0 3
+alt + shift + 5 : komorebic move-to-monitor-workspace 0 4
