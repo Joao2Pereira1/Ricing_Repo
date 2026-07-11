@@ -1,6 +1,8 @@
-# Ricing_Repo
-A repository with my configurations on both operating systems (Windows + Linux), also including a list of useful applications I recommend, as well as some scripts for switching themes. I configured Windows as closely as possible to Linux, with theme switching for the terminal, VS Code, Nilesoft Shell, Komorebic, and others.
+# 🏯 Ricing_Repo
 
+A repository with my configurations on both operating systems (Windows + Linux), also including a list of useful applications I recommend, as well as some scripts for switching themes.
+
+I configured Windows as closely as possible to Linux, using komorebi (tiling window manager), yasb (yet another status bar), and Windhawk for system-level UI modifications. The setup includes automatic theme switching for the terminal, VS Code, Nilesoft Shell, Komorebic, and others.
 
 https://github.com/user-attachments/assets/d53a3bfa-ee86-4cdf-bc8c-23a25c0a90a8
 
@@ -15,6 +17,26 @@ https://github.com/user-attachments/assets/bdd83b94-f6ae-4895-8280-df49e2cabe33
 ### Sasuke Rice
 
 <img width="300"  alt="1" src="https://github.com/user-attachments/assets/fc204f6b-a26e-491f-b9a6-c6493996f2f9" /> <img width="300"  alt="2" src="https://github.com/user-attachments/assets/2dfba0c2-fc1a-475f-b1ed-a0e75b0a0fef" /> <img width="300"  alt="3" src="https://github.com/user-attachments/assets/c7282dc6-0997-4ba7-a944-b4cd22971aad" /> <img width="300"  alt="4" src="https://github.com/user-attachments/assets/f8252b2c-d6d3-4b31-acb6-bb43826f086f" /> <img width="300"  alt="5" src="https://github.com/user-attachments/assets/6a7f4fad-8d9a-47d3-adc1-604f2c6053c3" />
+
+# 🛠️ Core Customization Tools
+
+## Windows Environment
+
+- Komorebi — A tiling window manager that works as an extension to Microsoft's Desktop Window Manager in Windows 10 and above.
+- YASB — Highly configurable status bar for Windows, written in Python, with support for many widgets, easy theming, and deep customization.
+- Windhawk — Customization marketplace for Windows and programs allowing deep system-level modifications.
+- Nilesoft-Shell — Powerful manager for Windows File Explorer context menu to build custom right-click behaviors.
+- AltSnap — Allows you to move and resize windows by using the Alt key and clicking anywhere on the window instead of relying on very precise edge dragging.
+- Spicetify — Command-line tool to customize the official Spotify client with custom themes and features.
+
+## Linux Environment
+
+- KDE Plasma Architecture — The vast majority of the Linux setup relies on standard, default KDE environments to maintain core stability.
+- Panel Colorizer — A KDE extension used to inject deep visual enhancements and formatting directly into the native panels.
+- KDE Material Colors — Deployed alongside custom automation hooks to synchronize system aesthetics. These hooks actively parse and trigger downstream updates, such as dynamically changing Spicetify styles and Oh My Posh terminal themes in a single, fluid sweep.
+- Spicetify — Command-line tool to customize the official Spotify client with custom themes and features.
+
+---
 
 # 💻 Windows & Linux Application Stack
 
