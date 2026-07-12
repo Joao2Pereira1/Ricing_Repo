@@ -22,19 +22,21 @@ https://github.com/user-attachments/assets/bdd83b94-f6ae-4895-8280-df49e2cabe33
 
 ## Windows Environment
 
-- Komorebi — A tiling window manager that works as an extension to Microsoft's Desktop Window Manager in Windows 10 and above.
-- YASB — Highly configurable status bar for Windows, written in Python, with support for many widgets, easy theming, and deep customization.
-- Windhawk — Customization marketplace for Windows and programs allowing deep system-level modifications.
-- Nilesoft-Shell — Powerful manager for Windows File Explorer context menu to build custom right-click behaviors.
-- AltSnap — Allows you to move and resize windows by using the Alt key and clicking anywhere on the window instead of relying on very precise edge dragging.
-- Spicetify — Command-line tool to customize the official Spotify client with custom themes and features.
+- **Komorebi** — A tiling window manager that works as an extension to Microsoft's Desktop Window Manager in Windows 10 and above.
+- **YASB** — Highly configurable status bar for Windows, written in Python, with support for many widgets, easy theming, and deep customization.
+- **Windhawk** — Customization marketplace for Windows and programs allowing deep system-level modifications.
+- **Nilesoft-Shell** — Powerful manager for Windows File Explorer context menu to build custom right-click behaviors.
+- **AltSnap** — Allows you to move and resize windows by using the Alt key and clicking anywhere on the window instead of relying on very precise edge dragging.
+- **Spicetify** — Command-line tool to customize the official Spotify client with custom themes and features.
 
 ## Linux Environment
 
-- KDE Plasma Architecture — The vast majority of the Linux setup relies on standard, default KDE environments to maintain core stability.
-- Panel Colorizer — A KDE extension used to inject deep visual enhancements and formatting directly into the native panels.
-- KDE Material Colors — Deployed alongside custom automation hooks to synchronize system aesthetics. These hooks actively parse and trigger downstream updates, such as dynamically changing Spicetify styles and Oh My Posh terminal themes in a single, fluid sweep.
-- Spicetify — Command-line tool to customize the official Spotify client with custom themes and features.
+- **KDE Plasma Architecture** — The vast majority of the Linux setup relies on standard, default KDE environments to maintain core stability.
+- **Panel Colorizer** — A KDE extension used to inject deep visual enhancements and formatting directly into the native panels.
+- **KDE Material Colors** — Deployed alongside custom automation hooks to synchronize system aesthetics. These hooks actively parse and trigger downstream updates, such as dynamically changing Spicetify styles and Oh My Posh terminal themes in a single, fluid sweep.
+- **Spicetify** — Command-line tool to customize the official Spotify client with custom themes and features.
+- **Plasma-music-toolbar** — A rich widget extension designed to bring sleek, interactive media management right into the KDE panel.
+- **Kara** — A highly optimized component tailored for advanced, seamless virtual desktop navigation and orchestration.
 
 ---
 
